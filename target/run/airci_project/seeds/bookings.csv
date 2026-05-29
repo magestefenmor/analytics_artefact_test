@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."bookings" ("booking_id" text,"booking_date" date,"customer_id" text,"flight_id" text,"booking_channel" text,"fare_class" text,"fare_family" text,"ticket_price_usd" varchar,"ancillary_revenue_usd" varchar,"bags_count" integer,"seat_selection_flag" integer,"booking_status" text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."bookings" FROM 'c:\Users\kouadja\Mageste\artefact\analytics_engineer_artefact_test\airci_project\seeds\bookings.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ';')
+        
+
+;
+  

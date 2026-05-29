@@ -1,0 +1,14 @@
+
+    
+    
+
+select
+    lnk_booking_hk as unique_field,
+    count(*) as n_records
+
+from "dev"."main_vault"."lnk_booking"
+where lnk_booking_hk is not null
+group by lnk_booking_hk
+having count(*) > 1
+
+

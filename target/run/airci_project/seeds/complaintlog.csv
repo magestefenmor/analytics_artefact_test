@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."complaintlog" ("complaint_id" text,"customer_id" text,"flight_id" text,"booking_id" text,"complaint_date" date,"complaint_type" text,"complaint_text" text,"assigned_department" text,"resolution_status" text,"corrective_action_taken" text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."complaintlog" FROM 'c:\Users\kouadja\Mageste\artefact\analytics_engineer_artefact_test\airci_project\seeds\complaintlog.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ';')
+        
+
+;
+  

@@ -1,0 +1,11 @@
+airport_code,airport_hk,airport_name,city,country,timezone,latitude,longitude,region,valid_from
+ABJ,c75aaeefe616527fef7772a13a229b8f823bda80eae6326606bcc53de929d09b,Félix-Houphouët-Boigny International Airport,Abidjan,Côte d'Ivoire,Africa/Abidjan,5.26,-3.93,Côte d'Ivoire,2026-05-25 09:41:43.820275
+BYK,895e4173c87826a42e09ecaae830736a07ecea8403d729e982f9cf76ed3451c3,Bouaké Airport,Bouaké,Côte d'Ivoire,Africa/Abidjan,7.74,-5.07,Côte d'Ivoire,2026-05-25 09:41:43.820275
+MJC,1374f4fe16e9208447a62d7ef67018d1736fd4c7a052bd2f627a0c7439e2daf3,Man Airport,Man,Côte d'Ivoire,Africa/Abidjan,7.27,-7.59,Côte d'Ivoire,2026-05-25 09:41:43.820275
+HGO,f3f88d2bf430b3e09fd757e9d4f87989c2280ccf504897126413c8c310b56a41,Korhogo Airport,Korhogo,Côte d'Ivoire,Africa/Abidjan,9.39,-5.56,Côte d'Ivoire,2026-05-25 09:41:43.820275
+ACC,2dde6d03ddaa287e3ac95b4befe8f38e8766a35092fc01e47e28d86c7a29e412,Kotoka International Airport,Accra,Ghana,Africa/Accra,5.61,-0.17,Afrique de l'Ouest,2026-05-25 09:41:43.820275
+DKR,ffd7ef8670d34782605d20390aeda970c3d49a7ab718f3c8646fc34b0d940124,Blaise Diagne International Airport,Dakar,Senegal,Africa/Dakar,14.67,-17.07,Autre,2026-05-25 09:41:43.820275
+LOS,c8967d2bba828cd249f6e708e624151fca8449fbe3aaca2fea129a8d3e1faadf,Murtala Muhammed International Airport,Lagos,Nigeria,Africa/Lagos,6.58,3.32,Autre,2026-05-25 09:41:43.820275
+COO,591e962e7514d1cce4a0d6d9c0c6539f9c41adec8751bcc14409fcebd7497ded,Cadjehoun Airport,Cotonou,Benin,Africa/Porto-Novo,6.36,2.38,Autre,2026-05-25 09:41:43.820275
+OUA,1e56dd5b63dcc22407aa4de9c9de6b2a90ad73e8b36a2115281e9de0244861e0,Ouagadougou Airport,Ouagadougou,Burkina Faso,Africa/Ouagadougou,12.35,-1.51,Afrique de l'Ouest,2026-05-25 09:41:43.820275
+CDG,0c9c38d14f16ce9a47372298d2a58cdceb5d6183254c00f8237741826d5479d6,Charles de Gaulle Airport,Paris,France,Europe/Paris,49.0,2.55,Europe / Maghreb,2026-05-25 09:41:43.820275

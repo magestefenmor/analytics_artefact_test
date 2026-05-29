@@ -1,0 +1,1 @@
+{{ snapshot_snap_loyalty_activity() }}

@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."airport" ("airport_code" text,"airport_name" text,"city" text,"country" text,"timezone" text,"latitude" varchar,"longitude" varchar)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."airport" FROM 'c:\Users\kouadja\Mageste\artefact\analytics_engineer_artefact_test\airci_project\seeds\airport.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ';')
+        
+
+;
+  

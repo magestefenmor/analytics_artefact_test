@@ -1,0 +1,1515 @@
+{
+  "generated_at": "2026-05-26T23:31:23",
+  "source_database": "dev.duckdb",
+  "format": "csv",
+  "delimiter": ",",
+  "encoding": "utf-8",
+  "tables": [
+    {
+      "source": "main_marts.dim_dates",
+      "file": "dim_dates.csv",
+      "powerbi_name": "dim_dates",
+      "category": "dimension",
+      "status": "exported",
+      "rows": 731,
+      "columns": [
+        {
+          "name": "date_id",
+          "type": "DATE"
+        },
+        {
+          "name": "year",
+          "type": "BIGINT"
+        },
+        {
+          "name": "month",
+          "type": "BIGINT"
+        },
+        {
+          "name": "day",
+          "type": "BIGINT"
+        },
+        {
+          "name": "quarter",
+          "type": "BIGINT"
+        },
+        {
+          "name": "month_name",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "day_of_week",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "day_of_week_num",
+          "type": "BIGINT"
+        },
+        {
+          "name": "is_weekend",
+          "type": "INTEGER"
+        },
+        {
+          "name": "week_of_year",
+          "type": "BIGINT"
+        },
+        {
+          "name": "season",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "is_holiday",
+          "type": "INTEGER"
+        }
+      ]
+    },
+    {
+      "source": "main_marts.dim_routes",
+      "file": "dim_routes.csv",
+      "powerbi_name": "dim_routes",
+      "category": "dimension",
+      "status": "exported",
+      "rows": 12,
+      "columns": [
+        {
+          "name": "route_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "route_hk",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "origin_airport_code",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "destination_airport_code",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "route_label",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "route_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "distance_km",
+          "type": "INTEGER"
+        },
+        {
+          "name": "block_time_min",
+          "type": "INTEGER"
+        },
+        {
+          "name": "origin_city",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "origin_country",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "destination_city",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "destination_country",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "has_return_route",
+          "type": "INTEGER"
+        },
+        {
+          "name": "valid_from",
+          "type": "TIMESTAMP"
+        },
+        {
+          "name": "snapshot_date",
+          "type": "TIMESTAMP"
+        }
+      ]
+    },
+    {
+      "source": "main_marts.dim_customers",
+      "file": "dim_customers.csv",
+      "powerbi_name": "dim_customers",
+      "category": "dimension",
+      "status": "exported",
+      "rows": 300,
+      "columns": [
+        {
+          "name": "customer_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "customer_hk",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "first_name",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "last_name",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "full_name",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "gender",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "birth_date",
+          "type": "DATE"
+        },
+        {
+          "name": "age",
+          "type": "BIGINT"
+        },
+        {
+          "name": "age_group",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "country",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "city",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "customer_segment",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "loyalty_tier",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "signup_date",
+          "type": "DATE"
+        },
+        {
+          "name": "preferred_channel",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "days_since_signup",
+          "type": "BIGINT"
+        },
+        {
+          "name": "valid_from",
+          "type": "TIMESTAMP"
+        },
+        {
+          "name": "snapshot_date",
+          "type": "TIMESTAMP"
+        }
+      ]
+    },
+    {
+      "source": "main_marts.dim_aircraft",
+      "file": "dim_aircraft.csv",
+      "powerbi_name": "dim_aircraft",
+      "category": "dimension",
+      "status": "exported",
+      "rows": 4,
+      "columns": [
+        {
+          "name": "aircraft_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "aircraft_family",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "typical_seat_capacity",
+          "type": "INTEGER"
+        },
+        {
+          "name": "is_neo_engine",
+          "type": "INTEGER"
+        },
+        {
+          "name": "range_category",
+          "type": "VARCHAR"
+        }
+      ]
+    },
+    {
+      "source": "main_marts.dim_airports",
+      "file": "dim_origin_airports.csv",
+      "powerbi_name": "dim_origin_airports",
+      "category": "role_playing_dimension",
+      "status": "exported",
+      "rows": 10,
+      "columns": [
+        {
+          "name": "airport_code",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "airport_hk",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "airport_name",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "city",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "country",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "timezone",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "latitude",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "longitude",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "region",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "valid_from",
+          "type": "TIMESTAMP"
+        }
+      ]
+    },
+    {
+      "source": "main_marts.dim_airports",
+      "file": "dim_destination_airports.csv",
+      "powerbi_name": "dim_destination_airports",
+      "category": "role_playing_dimension",
+      "status": "exported",
+      "rows": 10,
+      "columns": [
+        {
+          "name": "airport_code",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "airport_hk",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "airport_name",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "city",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "country",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "timezone",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "latitude",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "longitude",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "region",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "valid_from",
+          "type": "TIMESTAMP"
+        }
+      ]
+    },
+    {
+      "source": "main_marts.fact_flights",
+      "file": "fact_flights.csv",
+      "powerbi_name": "fact_flights",
+      "category": "fact",
+      "status": "exported",
+      "rows": 480,
+      "columns": [
+        {
+          "name": "flight_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "flight_hk",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "route_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "route_hk",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "aircraft_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "flight_number",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "flight_status",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "delay_min",
+          "type": "INTEGER"
+        },
+        {
+          "name": "seat_capacity",
+          "type": "INTEGER"
+        },
+        {
+          "name": "scheduled_departure",
+          "type": "TIMESTAMP"
+        },
+        {
+          "name": "actual_departure",
+          "type": "TIMESTAMP"
+        },
+        {
+          "name": "scheduled_arrival",
+          "type": "TIMESTAMP"
+        },
+        {
+          "name": "actual_arrival",
+          "type": "TIMESTAMP"
+        },
+        {
+          "name": "flight_date",
+          "type": "DATE"
+        },
+        {
+          "name": "route_label",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "route_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "origin_airport_code",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "destination_airport_code",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "distance_km",
+          "type": "INTEGER"
+        },
+        {
+          "name": "seats_sold",
+          "type": "BIGINT"
+        },
+        {
+          "name": "ticket_revenue_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ancillary_revenue_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "total_revenue_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "bookings_with_ancillary",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "no_show_count",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "load_factor",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "total_cost_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fuel_cost_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "crew_cost_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "airport_handling_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "maintenance_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "cost_per_seat_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "flight_margin_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "yield_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "avg_sentiment_score",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "avg_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "total_signals",
+          "type": "BIGINT"
+        },
+        {
+          "name": "is_delayed",
+          "type": "INTEGER"
+        },
+        {
+          "name": "is_cancelled",
+          "type": "INTEGER"
+        },
+        {
+          "name": "is_on_time",
+          "type": "INTEGER"
+        },
+        {
+          "name": "is_severely_delayed",
+          "type": "INTEGER"
+        },
+        {
+          "name": "snapshot_date",
+          "type": "TIMESTAMP"
+        }
+      ]
+    },
+    {
+      "source": "main_marts.fact_bookings",
+      "file": "fact_bookings.csv",
+      "powerbi_name": "fact_bookings",
+      "category": "fact",
+      "status": "exported",
+      "rows": 11475,
+      "columns": [
+        {
+          "name": "booking_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "booking_hk",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "customer_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "customer_hk",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "flight_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "flight_hk",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "route_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "route_hk",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "booking_date",
+          "type": "DATE"
+        },
+        {
+          "name": "booking_channel",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "fare_class",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "fare_family",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "ticket_price_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ancillary_revenue_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "total_revenue_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "bags_count",
+          "type": "INTEGER"
+        },
+        {
+          "name": "seat_selection_flag",
+          "type": "INTEGER"
+        },
+        {
+          "name": "booking_status",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "customer_segment",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "loyalty_tier",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "preferred_channel",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "customer_country",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "is_active_booking",
+          "type": "INTEGER"
+        },
+        {
+          "name": "is_no_show",
+          "type": "INTEGER"
+        },
+        {
+          "name": "is_changed",
+          "type": "INTEGER"
+        },
+        {
+          "name": "is_flown",
+          "type": "INTEGER"
+        },
+        {
+          "name": "has_ancillary",
+          "type": "INTEGER"
+        },
+        {
+          "name": "booking_lead_time_days",
+          "type": "BIGINT"
+        },
+        {
+          "name": "customer_snapshot_date",
+          "type": "TIMESTAMP"
+        }
+      ]
+    },
+    {
+      "source": "main_marts.fact_flight_costs",
+      "file": "fact_flight_costs.csv",
+      "powerbi_name": "fact_flight_costs",
+      "category": "fact",
+      "status": "exported",
+      "rows": 480,
+      "columns": [
+        {
+          "name": "flight_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "flight_hk",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "fuel_cost_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "crew_cost_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "airport_handling_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "maintenance_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "total_cost_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "cost_per_seat_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "fuel_cost_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "crew_cost_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "handling_cost_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "maintenance_cost_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "snapshot_date",
+          "type": "TIMESTAMP"
+        }
+      ]
+    },
+    {
+      "source": "main_marts.fact_loyalty_activity",
+      "file": "fact_loyalty_activity.csv",
+      "powerbi_name": "fact_loyalty_activity",
+      "category": "fact",
+      "status": "exported",
+      "rows": 0,
+      "columns": [
+        {
+          "name": "activity_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "customer_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "customer_hk",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "activity_date",
+          "type": "DATE"
+        },
+        {
+          "name": "event_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "loyalty_tier",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "points_earned",
+          "type": "INTEGER"
+        },
+        {
+          "name": "points_redeemed",
+          "type": "INTEGER"
+        },
+        {
+          "name": "balance_after",
+          "type": "INTEGER"
+        },
+        {
+          "name": "balance_before",
+          "type": "INTEGER"
+        },
+        {
+          "name": "customer_segment",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "preferred_channel",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "is_upgrade",
+          "type": "INTEGER"
+        },
+        {
+          "name": "is_downgrade",
+          "type": "INTEGER"
+        },
+        {
+          "name": "is_expiry",
+          "type": "INTEGER"
+        },
+        {
+          "name": "is_earn",
+          "type": "INTEGER"
+        },
+        {
+          "name": "is_redeem",
+          "type": "INTEGER"
+        },
+        {
+          "name": "customer_snapshot_date",
+          "type": "TIMESTAMP"
+        }
+      ]
+    },
+    {
+      "source": "main_ai_ready.obt_route_summary",
+      "file": "obt_route_summary.csv",
+      "powerbi_name": "obt_route_summary",
+      "category": "decision",
+      "status": "exported",
+      "rows": 12,
+      "columns": [
+        {
+          "name": "route_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "route_label",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "route_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "origin_airport_code",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "destination_airport_code",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "origin_city",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "origin_country",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "destination_city",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "destination_country",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "distance_km",
+          "type": "INTEGER"
+        },
+        {
+          "name": "block_time_min",
+          "type": "INTEGER"
+        },
+        {
+          "name": "has_return_route",
+          "type": "INTEGER"
+        },
+        {
+          "name": "total_flights",
+          "type": "BIGINT"
+        },
+        {
+          "name": "total_seats_sold",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "total_seats_available",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "avg_load_factor",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "on_time_rate",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "avg_delay_min",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "delayed_flights",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "cancelled_flights",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "severely_delayed_flights",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "total_revenue_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "total_ticket_revenue",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "total_ancillary_revenue",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "total_cost_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "total_margin_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "avg_yield_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "rask_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "cask_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "margin_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "revenue_share_network",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "capacity_share_network",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "avg_sentiment_score",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "avg_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "route_label_ontology",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "concentration_label",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "_obt_loaded_at",
+          "type": "TIMESTAMP WITH TIME ZONE"
+        }
+      ]
+    },
+    {
+      "source": "main_ai_ready.obt_customer_360",
+      "file": "obt_customer_360.csv",
+      "powerbi_name": "obt_customer_360",
+      "category": "decision",
+      "status": "exported",
+      "rows": 300,
+      "columns": [
+        {
+          "name": "customer_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "customer_hk",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "full_name",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "gender",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "birth_date",
+          "type": "DATE"
+        },
+        {
+          "name": "age",
+          "type": "BIGINT"
+        },
+        {
+          "name": "age_group",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "country",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "city",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "customer_segment",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "loyalty_tier",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "signup_date",
+          "type": "DATE"
+        },
+        {
+          "name": "days_since_signup",
+          "type": "BIGINT"
+        },
+        {
+          "name": "preferred_channel",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "total_bookings",
+          "type": "BIGINT"
+        },
+        {
+          "name": "flown_bookings",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "no_show_count",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "changed_count",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "distinct_routes_flown",
+          "type": "BIGINT"
+        },
+        {
+          "name": "first_booking_date",
+          "type": "DATE"
+        },
+        {
+          "name": "last_booking_date",
+          "type": "DATE"
+        },
+        {
+          "name": "preferred_booking_channel",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "preferred_fare_class",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "avg_lead_time_days",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "total_ltv_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "total_ticket_revenue",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "total_ancillary_revenue",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "avg_ticket_price_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "avg_ancillary_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "no_show_rate",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ancillary_attach_rate",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "is_repeat_customer",
+          "type": "INTEGER"
+        },
+        {
+          "name": "days_since_last_booking",
+          "type": "BIGINT"
+        },
+        {
+          "name": "total_points_earned",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "total_points_redeemed",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "loyalty_balance",
+          "type": "INTEGER"
+        },
+        {
+          "name": "tier_upgrades",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "tier_downgrades",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "points_expiry_events",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "last_loyalty_event_date",
+          "type": "DATE"
+        },
+        {
+          "name": "loyalty_redemption_rate",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "avg_sentiment_score",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "avg_flight_rating",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "sentiment_signal_count",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "frequency_label",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "value_label",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "recency_label",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "_vault_snapshot_date",
+          "type": "TIMESTAMP"
+        },
+        {
+          "name": "_obt_loaded_at",
+          "type": "TIMESTAMP WITH TIME ZONE"
+        }
+      ]
+    },
+    {
+      "source": "main_ontology.ont_route_labels",
+      "file": "ont_route_labels.csv",
+      "powerbi_name": "ont_route_labels",
+      "category": "decision",
+      "status": "exported",
+      "rows": 12,
+      "columns": [
+        {
+          "name": "route_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "route_label",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "route_type",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "origin_city",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "destination_city",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "total_revenue_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "total_cost_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "total_margin_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "margin_pct",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "avg_load_factor",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "on_time_rate",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "avg_yield_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "rask_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "cask_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "revenue_share_network",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "total_flights",
+          "type": "BIGINT"
+        },
+        {
+          "name": "cancelled_flights",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "delayed_flights",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "route_label_ont",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "profitability_signal",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "otp_signal",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "capacity_signal",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "recommended_action",
+          "type": "VARCHAR"
+        }
+      ]
+    },
+    {
+      "source": "main_ontology.ont_customer_labels",
+      "file": "ont_customer_labels.csv",
+      "powerbi_name": "ont_customer_labels",
+      "category": "decision",
+      "status": "exported",
+      "rows": 300,
+      "columns": [
+        {
+          "name": "customer_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "full_name",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "customer_segment",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "loyalty_tier",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "age_group",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "country",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "preferred_channel",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "days_since_signup",
+          "type": "BIGINT"
+        },
+        {
+          "name": "customer_ltv_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "total_bookings",
+          "type": "BIGINT"
+        },
+        {
+          "name": "flown_bookings",
+          "type": "BIGINT"
+        },
+        {
+          "name": "is_repeat_customer",
+          "type": "INTEGER"
+        },
+        {
+          "name": "no_show_rate",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "ancillary_attach_rate",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "avg_ticket_price_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "avg_ancillary_usd",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "loyalty_balance",
+          "type": "INTEGER"
+        },
+        {
+          "name": "loyalty_redemption_rate",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "tier_upgrades",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "tier_downgrades",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "points_expiry_events",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "days_since_last_booking",
+          "type": "BIGINT"
+        },
+        {
+          "name": "last_booking_date",
+          "type": "DATE"
+        },
+        {
+          "name": "total_points_earned",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "total_points_redeemed",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "customer_label_ont",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "churn_risk_score",
+          "type": "INTEGER"
+        },
+        {
+          "name": "value_signal",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "loyalty_signal",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "recommended_action",
+          "type": "VARCHAR"
+        }
+      ]
+    },
+    {
+      "source": "main_ontology.ont_upsell_opportunities",
+      "file": "ont_upsell_opportunities.csv",
+      "powerbi_name": "ont_upsell_opportunities",
+      "category": "decision",
+      "status": "exported",
+      "rows": 295,
+      "columns": [
+        {
+          "name": "customer_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "full_name",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "customer_segment",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "loyalty_tier",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "preferred_channel",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "country",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "age_group",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "total_bookings",
+          "type": "BIGINT"
+        },
+        {
+          "name": "avg_ticket_price",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "avg_ancillary",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "total_ticket_rev",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "total_ancillary_rev",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "economy_bookings",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "business_bookings",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "avg_bags",
+          "type": "DOUBLE"
+        },
+        {
+          "name": "bookings_no_seat",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "intl_bookings",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "intl_no_seat",
+          "type": "HUGEINT"
+        },
+        {
+          "name": "upsell_class",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "upsell_baggage",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "upsell_seat",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "upsell_fare_family",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "upsell_ancillary",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "crosssell_loyalty",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "upsell_score",
+          "type": "INTEGER"
+        },
+        {
+          "name": "opportunity_count",
+          "type": "INTEGER"
+        },
+        {
+          "name": "action_segment",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "primary_action",
+          "type": "VARCHAR"
+        }
+      ]
+    }
+  ]
+}

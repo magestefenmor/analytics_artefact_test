@@ -1,0 +1,16 @@
+from_table,from_column,to_table,to_column,cardinality,filter_direction
+dim_dates,date_id,fact_flights,flight_date,1:*,single
+dim_routes,route_id,fact_flights,route_id,1:*,single
+dim_routes,route_id,fact_bookings,route_id,1:*,single
+dim_customers,customer_id,fact_bookings,customer_id,1:*,single
+dim_customers,customer_id,fact_loyalty_activity,customer_id,1:*,single
+dim_aircraft,aircraft_type,fact_flights,aircraft_type,1:*,single
+fact_flights,flight_id,fact_bookings,flight_id,1:*,single
+fact_flights,flight_id,fact_flight_costs,flight_id,1:1,single
+dim_origin_airports,airport_code,dim_routes,origin_airport_code,1:*,single
+dim_destination_airports,airport_code,dim_routes,destination_airport_code,1:*,single
+dim_routes,route_id,obt_route_summary,route_id,1:1,single
+dim_routes,route_id,ont_route_labels,route_id,1:1,single
+dim_customers,customer_id,obt_customer_360,customer_id,1:1,single
+dim_customers,customer_id,ont_customer_labels,customer_id,1:1,single
+dim_customers,customer_id,ont_upsell_opportunities,customer_id,1:*,single
