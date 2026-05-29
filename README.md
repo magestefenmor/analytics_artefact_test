@@ -20,10 +20,7 @@ seeds CSV
 staging
    |
    v
-raw vault / data vault
-   |
-   v
-business vault
+data vault /business vault
    |
    v
 marts
@@ -132,9 +129,9 @@ Dans l'interface actuelle, ce fichier est importe directement par l'agent Python
 Le modele peut etre configure avec la variable d'environnement :
 
 ```powershell
-$env:COHERE_CHAT_MODEL="command-a-03-2025"
+.env:COHERE_CHAT_MODEL="command-a-03-2025"
 ```
-
+Obtenir l'API cohere en s'inscrivant sur https://cohere.com/ 
 ### Interface
 
 `airci_interface.py` lance une application web locale qui sert l'interface React contenue dans `ui/`.
@@ -156,26 +153,21 @@ Interface React
 Depuis le dossier parent du projet :
 
 ```powershell
-cd C:\Users\kouadja\Mageste\artefact\analytics_engineer_artefact_test\airci_project
+cd analytics_engineer_artefact_test\airci_project
 ```
 
 Activer l'environnement virtuel :
 
-```powershell
-..\air\Scripts\Activate.ps1
-```
-
 Installer les dependances Python si besoin :
 
-```powershell
+
 pip install -r requirement.txt
-```
+
 
 Installer les packages dbt :
 
-```powershell
+
 dbt deps
-```
 
 Le fichier `.env` doit contenir la cle Cohere :
 
@@ -320,8 +312,7 @@ python airci_interface.py
 
 ### Livrables Power BI
 
-- `POWERBI_DASHBOARD_README.md` : guide complet du dashboard executive
-- `POWERBI_STAR_SCHEMA.svg` : image du modele en etoile recommande
+Dashboard.pbix
 
 ## Commandes utiles
 
