@@ -1,0 +1,128 @@
+version: 2
+
+models:
+
+  # ── HUBS ────────────────────────────────────────────────────
+  - name: hub_flight
+    description: "Hub vol — clé métier flight_id. 1 ligne par vol unique."
+    columns:
+      - name: flight_hk
+        tests: [unique, not_null]
+      - name: flight_bk
+        tests: [unique, not_null]
+
+  - name: hub_customer
+    description: "Hub client — clé métier customer_id."
+    columns:
+      - name: customer_hk
+        tests: [unique, not_null]
+      - name: customer_bk
+        tests: [unique, not_null]
+
+  - name: hub_routes
+    description: "Hub route — clé métier route_id."
+    columns:
+      - name: route_hk
+        tests: [unique, not_null]
+
+  - name: hub_airports
+    description: "Hub aéroport — clé métier airport_code (IATA)."
+    columns:
+      - name: airport_hk
+        tests: [unique, not_null]
+
+  - name: hub_booking
+    description: "Hub réservation — clé métier booking_id."
+    columns:
+      - name: booking_hk
+        tests: [unique, not_null]
+
+  # ── LINKS ───────────────────────────────────────────────────
+  - name: lnk_flight_route
+    description: "Relation vol ↔ route."
+    columns:
+      - name: lnk_flight_route_hk
+        tests: [unique, not_null]
+
+  - name: lnk_booking
+    description: "Relation réservation ↔ vol ↔ client."
+    columns:
+      - name: lnk_booking_hk
+        tests: [unique, not_null]
+
+  - name: lnk_loyalty_event
+    description: "Relation événement loyalty ↔ client."
+    columns:
+      - name: lnk_loyalty_event_hk
+        tests: [unique, not_null]
+
+  - name: lnk_flight_review
+    description: "Relation avis ↔ vol ↔ client."
+    columns:
+      - name: lnk_flight_review_hk
+        tests: [unique, not_null]
+
+  - name: lnk_flight_incident
+    description: "Relation incident (ticket/plainte) ↔ client."
+    columns:
+      - name: lnk_flight_incident_hk
+        tests: [unique, not_null]
+
+  # ── SATELLITES ──────────────────────────────────────────────
+  - name: sat_flight_operations
+    description: "Attributs opérationnels d'un vol — statut, retard, capacité."
+    columns:
+      - name: flight_hk
+        tests: [not_null]
+      - name: is_current
+        tests:
+          - accepted_values:
+              values: [0, 1]
+
+  - name: sat_flight_costs
+    description: "Coûts opérationnels par vol."
+    columns:
+      - name: flight_hk
+        tests: [not_null]
+      - name: total_cost_usd
+        tests: [not_null]
+
+  - name: sat_customer_profile
+    description: "Données démographiques et préférences client."
+    columns:
+      - name: customer_hk
+        tests: [not_null]
+
+  - name: sat_customer_loyalty
+    description: "Historique des événements loyalty par client."
+    columns:
+      - name: customer_hk
+        tests: [not_null]
+
+  - name: sat_route_details
+    description: "Caractéristiques d'une route (type, distance, durée)."
+    columns:
+      - name: route_hk
+        tests: [not_null]
+
+  - name: sat_airport_details
+    description: "Détails d'un aéroport — coordonnées, timezone, is_hub."
+    columns:
+      - name: airport_hk
+        tests: [not_null]
+
+  - name: sat_booking_details
+    description: "Détails commerciaux d'une réservation."
+    columns:
+      - name: booking_hk
+        tests: [not_null]
+
+  - name: sat_flight_sentiment
+    description: "Signaux qualitatifs sur un vol (reviews + plaintes) avec sentiment_score."
+    columns:
+      - name: flight_hk
+        tests: [not_null]
+      - name: sentiment_score
+        tests:
+          - accepted_values:
+              values: [-1, 0, 1]

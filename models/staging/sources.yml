@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+  - name: raw
+    description: "Données brutes chargées depuis Excel dans DuckDB"
+    schema: main
+    tables:
+      - name: flights
+        description: "Vols planifiés et opérés de starter dataset"
+      - name: bookings
+        description: "Réservations et revenus ancillaires de starter dataset"
+      - name: customers
+        description: "Profils clients de starter dataset"
+      - name: routes
+        description: "Réseau de routes de starter dataset"
+      - name: airport
+        description: "Référentiel aéroports de starter dataset"
+      - name: flightCosts
+        description: "Coûts opérationnels par vol de Partie 1"
+      - name: loyaltyActivity
+        description: "Événements loyalty earn/burn de Partie 1"
+      - name: customerReviews
+        description: "Avis clients non structurés de Partie 1"
+      - name:  supportticket
+        description: "Tickets support de Partie 1"
+      - name: complaintlog
+        description: "Logs de plaintes de Partie 1"

@@ -1,0 +1,501 @@
+loyalty_id;customer_id;event_date;event_type;points_earned;points_redeemed;balance_after;loyalty_tier
+LOY000001;CUST0001;2024-11-11;Points redeemed - Lounge;0;454;3192;Explorer
+LOY000002;CUST0001;2024-03-22;Points expiry warning;0;0;3192;Explorer
+LOY000003;CUST0001;2024-06-16;Tier upgrade;0;0;3192;Explorer
+LOY000004;CUST0001;2024-06-09;Points earned - Partner;426;0;3618;Explorer
+LOY000005;CUST0001;2024-09-12;Tier upgrade;0;0;3618;Explorer
+LOY000006;CUST0002;2024-01-12;Points earned - Flight;905;0;5479;Explorer
+LOY000007;CUST0002;2024-09-15;Points redeemed - Lounge;0;446;5033;Explorer
+LOY000008;CUST0002;2024-04-20;Tier upgrade;0;0;5033;Explorer
+LOY000009;CUST0002;2024-06-29;Points earned - Flight;203;0;5236;Explorer
+LOY000010;CUST0002;2024-05-24;Points redeemed - Lounge;0;681;4555;Explorer
+LOY000011;CUST0003;2024-08-08;Points earned - Partner;641;0;2021;Explorer
+LOY000012;CUST0004;2024-01-24;Points redeemed - Lounge;0;252;3245;Silver
+LOY000013;CUST0004;2024-10-18;Tier upgrade;0;0;3245;Silver
+LOY000014;CUST0004;2024-04-09;Points redeemed - Upgrade;0;766;2479;Silver
+LOY000015;CUST0004;2024-05-27;Points earned - Flight;891;0;3370;Silver
+LOY000016;CUST0004;2024-09-15;Points redeemed - Lounge;0;763;2607;Silver
+LOY000017;CUST0004;2024-05-23;Points expiry warning;0;0;2607;Silver
+LOY000018;CUST0004;2024-11-15;Tier downgrade;0;0;2607;Silver
+LOY000019;CUST0005;2024-07-20;Points redeemed - Upgrade;0;547;745;Silver
+LOY000020;CUST0005;2024-10-12;Points redeemed - Upgrade;0;347;398;Silver
+LOY000021;CUST0005;2024-04-11;Tier upgrade;0;0;398;Silver
+LOY000022;CUST0006;2024-01-20;Points earned - Partner;782;0;1653;Explorer
+LOY000023;CUST0007;2024-11-06;Tier upgrade;0;0;1720;Silver
+LOY000024;CUST0007;2024-03-12;Points redeemed - Upgrade;0;526;1194;Silver
+LOY000025;CUST0007;2024-03-24;Points redeemed - Lounge;0;506;688;Silver
+LOY000026;CUST0007;2024-10-30;Points redeemed - Upgrade;0;688;0;Silver
+LOY000027;CUST0007;2024-09-17;Tier upgrade;0;0;0;Silver
+LOY000028;CUST0007;2024-09-07;Tier downgrade;0;0;0;Silver
+LOY000029;CUST0007;2024-10-15;Points redeemed - Upgrade;0;0;0;Silver
+LOY000030;CUST0007;2024-01-09;Points redeemed - Upgrade;0;0;0;Silver
+LOY000031;CUST0008;2024-12-18;Tier downgrade;0;0;3020;Silver
+LOY000032;CUST0008;2024-01-14;Tier upgrade;0;0;3020;Silver
+LOY000033;CUST0008;2024-08-30;Points redeemed - Upgrade;0;792;2228;Silver
+LOY000034;CUST0008;2024-10-22;Points earned - Partner;205;0;2433;Silver
+LOY000035;CUST0008;2024-10-25;Points redeemed - Lounge;0;374;2059;Silver
+LOY000036;CUST0008;2024-09-25;Tier downgrade;0;0;2059;Silver
+LOY000037;CUST0008;2024-11-13;Points expiry warning;0;0;2059;Silver
+LOY000038;CUST0009;2024-01-17;Tier upgrade;0;0;2484;Silver
+LOY000039;CUST0009;2024-12-24;Points earned - Flight;490;0;2974;Silver
+LOY000040;CUST0009;2024-01-10;Points redeemed - Lounge;0;521;2453;Silver
+LOY000041;CUST0010;2024-07-29;Tier upgrade;0;0;2170;Explorer
+LOY000042;CUST0010;2024-11-09;Points redeemed - Lounge;0;263;1907;Explorer
+LOY000043;CUST0010;2024-12-27;Points earned - Partner;1162;0;3069;Explorer
+LOY000044;CUST0010;2024-04-16;Tier upgrade;0;0;3069;Explorer
+LOY000045;CUST0010;2024-06-15;Tier downgrade;0;0;3069;Explorer
+LOY000046;CUST0010;2024-09-01;Tier upgrade;0;0;3069;Explorer
+LOY000047;CUST0010;2024-07-11;Points redeemed - Upgrade;0;377;2692;Explorer
+LOY000048;CUST0011;2024-06-30;Tier downgrade;0;0;4975;Explorer
+LOY000049;CUST0011;2024-12-14;Tier downgrade;0;0;4975;Explorer
+LOY000050;CUST0011;2024-12-20;Points redeemed - Upgrade;0;695;4280;Explorer
+LOY000051;CUST0011;2024-04-08;Points earned - Partner;671;0;4951;Explorer
+LOY000052;CUST0011;2024-10-12;Points redeemed - Upgrade;0;430;4521;Explorer
+LOY000053;CUST0011;2024-06-01;Points expiry warning;0;0;4521;Explorer
+LOY000054;CUST0012;2024-06-11;Points redeemed - Lounge;0;557;3948;Explorer
+LOY000055;CUST0012;2024-10-13;Points expiry warning;0;0;3948;Explorer
+LOY000056;CUST0012;2024-05-20;Points redeemed - Upgrade;0;324;3624;Explorer
+LOY000057;CUST0012;2024-10-20;Tier downgrade;0;0;3624;Explorer
+LOY000058;CUST0013;2024-03-15;Points redeemed - Upgrade;0;243;3084;Explorer
+LOY000059;CUST0013;2024-05-27;Tier downgrade;0;0;3084;Explorer
+LOY000060;CUST0013;2024-02-10;Points redeemed - Upgrade;0;652;2432;Explorer
+LOY000061;CUST0013;2024-12-01;Points redeemed - Upgrade;0;690;1742;Explorer
+LOY000062;CUST0013;2024-04-19;Points earned - Partner;1203;0;2945;Explorer
+LOY000063;CUST0013;2024-05-18;Tier upgrade;0;0;2945;Explorer
+LOY000064;CUST0013;2024-12-22;Points redeemed - Upgrade;0;340;2605;Explorer
+LOY000065;CUST0014;2024-01-26;Tier downgrade;0;0;2486;Explorer
+LOY000066;CUST0014;2024-09-28;Points earned - Partner;1406;0;3892;Explorer
+LOY000067;CUST0014;2024-04-29;Points earned - Flight;305;0;4197;Explorer
+LOY000068;CUST0014;2024-07-30;Points redeemed - Upgrade;0;683;3514;Explorer
+LOY000069;CUST0015;2024-10-08;Points earned - Partner;933;0;1475;Explorer
+LOY000070;CUST0015;2024-11-30;Points redeemed - Lounge;0;688;787;Explorer
+LOY000071;CUST0015;2024-11-29;Points earned - Partner;688;0;1475;Explorer
+LOY000072;CUST0016;2024-11-29;Tier upgrade;0;0;1232;Explorer
+LOY000073;CUST0017;2024-08-01;Points expiry warning;0;0;1934;Explorer
+LOY000074;CUST0018;2024-09-10;Points earned - Partner;692;0;4444;Explorer
+LOY000075;CUST0019;2024-10-17;Tier upgrade;0;0;2944;Gold
+LOY000076;CUST0020;2024-08-20;Tier downgrade;0;0;2831;Explorer
+LOY000077;CUST0020;2024-10-05;Tier upgrade;0;0;2831;Explorer
+LOY000078;CUST0020;2024-09-09;Points earned - Partner;1132;0;3963;Explorer
+LOY000079;CUST0020;2024-08-27;Points redeemed - Upgrade;0;397;3566;Explorer
+LOY000080;CUST0020;2024-02-27;Points redeemed - Upgrade;0;366;3200;Explorer
+LOY000081;CUST0020;2024-08-22;Tier downgrade;0;0;3200;Explorer
+LOY000082;CUST0021;2024-06-21;Points expiry warning;0;0;615;Explorer
+LOY000083;CUST0021;2024-05-31;Tier upgrade;0;0;615;Explorer
+LOY000084;CUST0021;2024-12-11;Points expiry warning;0;0;615;Explorer
+LOY000085;CUST0022;2024-09-20;Points redeemed - Upgrade;0;288;3715;Explorer
+LOY000086;CUST0022;2024-07-24;Tier downgrade;0;0;3715;Explorer
+LOY000087;CUST0022;2024-02-18;Points earned - Partner;387;0;4102;Explorer
+LOY000088;CUST0022;2024-09-01;Points redeemed - Upgrade;0;454;3648;Explorer
+LOY000089;CUST0022;2024-01-04;Points redeemed - Upgrade;0;592;3056;Explorer
+LOY000090;CUST0022;2024-04-30;Points redeemed - Lounge;0;473;2583;Explorer
+LOY000091;CUST0022;2024-06-17;Points redeemed - Upgrade;0;796;1787;Explorer
+LOY000092;CUST0023;2024-11-30;Points redeemed - Upgrade;0;441;2201;Silver
+LOY000093;CUST0024;2024-06-06;Points earned - Partner;930;0;5242;Explorer
+LOY000094;CUST0024;2024-12-17;Tier upgrade;0;0;5242;Explorer
+LOY000095;CUST0025;2024-11-23;Points redeemed - Upgrade;0;576;885;Gold
+LOY000096;CUST0025;2024-11-10;Points earned - Partner;548;0;1433;Gold
+LOY000097;CUST0025;2024-03-09;Points redeemed - Lounge;0;356;1077;Gold
+LOY000098;CUST0025;2024-08-20;Tier downgrade;0;0;1077;Gold
+LOY000099;CUST0025;2024-11-06;Points redeemed - Upgrade;0;625;452;Gold
+LOY000100;CUST0026;2024-12-06;Points expiry warning;0;0;4903;Silver
+LOY000101;CUST0026;2024-04-21;Points expiry warning;0;0;4903;Silver
+LOY000102;CUST0026;2024-05-06;Tier downgrade;0;0;4903;Silver
+LOY000103;CUST0026;2024-11-01;Points expiry warning;0;0;4903;Silver
+LOY000104;CUST0026;2024-02-11;Tier upgrade;0;0;4903;Silver
+LOY000105;CUST0026;2024-08-16;Tier upgrade;0;0;4903;Silver
+LOY000106;CUST0026;2024-12-26;Points redeemed - Upgrade;0;279;4624;Silver
+LOY000107;CUST0026;2024-10-15;Points earned - Flight;226;0;4850;Silver
+LOY000108;CUST0027;2024-03-17;Points earned - Partner;771;0;5667;Silver
+LOY000109;CUST0027;2024-09-23;Points redeemed - Lounge;0;319;5348;Silver
+LOY000110;CUST0027;2024-12-14;Points earned - Partner;1294;0;6642;Silver
+LOY000111;CUST0027;2024-09-07;Points earned - Flight;1145;0;7787;Silver
+LOY000112;CUST0028;2024-03-08;Tier upgrade;0;0;4214;Explorer
+LOY000113;CUST0029;2024-12-10;Points expiry warning;0;0;4287;Explorer
+LOY000114;CUST0030;2024-05-10;Points expiry warning;0;0;3743;Explorer
+LOY000115;CUST0031;2024-01-24;Points redeemed - Lounge;0;552;546;Explorer
+LOY000116;CUST0031;2024-12-24;Points earned - Flight;1208;0;1754;Explorer
+LOY000117;CUST0031;2024-01-31;Points earned - Flight;1066;0;2820;Explorer
+LOY000118;CUST0031;2024-01-17;Points redeemed - Upgrade;0;618;2202;Explorer
+LOY000119;CUST0032;2024-07-10;Points redeemed - Lounge;0;659;3284;Explorer
+LOY000120;CUST0032;2024-07-12;Points redeemed - Lounge;0;282;3002;Explorer
+LOY000121;CUST0032;2024-12-15;Tier downgrade;0;0;3002;Explorer
+LOY000122;CUST0033;2024-03-01;Points earned - Partner;1200;0;4548;Gold
+LOY000123;CUST0033;2024-07-20;Tier upgrade;0;0;4548;Gold
+LOY000124;CUST0033;2024-03-06;Tier downgrade;0;0;4548;Gold
+LOY000125;CUST0034;2024-06-01;Points redeemed - Lounge;0;686;0;Gold
+LOY000126;CUST0035;2024-05-06;Points redeemed - Lounge;0;554;1827;Explorer
+LOY000127;CUST0035;2024-03-20;Points redeemed - Upgrade;0;393;1434;Explorer
+LOY000128;CUST0035;2024-02-27;Points earned - Flight;1452;0;2886;Explorer
+LOY000129;CUST0035;2024-08-02;Tier upgrade;0;0;2886;Explorer
+LOY000130;CUST0035;2024-01-09;Points earned - Partner;522;0;3408;Explorer
+LOY000131;CUST0035;2024-02-04;Points earned - Flight;1316;0;4724;Explorer
+LOY000132;CUST0035;2024-01-18;Points redeemed - Lounge;0;249;4475;Explorer
+LOY000133;CUST0036;2024-08-12;Points earned - Partner;1205;0;5000;Explorer
+LOY000134;CUST0037;2024-09-14;Points redeemed - Upgrade;0;439;1208;Explorer
+LOY000135;CUST0038;2024-05-01;Points redeemed - Upgrade;0;346;2780;Silver
+LOY000136;CUST0038;2024-12-04;Tier upgrade;0;0;2780;Silver
+LOY000137;CUST0038;2024-04-23;Points redeemed - Lounge;0;507;2273;Silver
+LOY000138;CUST0038;2024-05-20;Points earned - Flight;1240;0;3513;Silver
+LOY000139;CUST0038;2024-10-29;Tier downgrade;0;0;3513;Silver
+LOY000140;CUST0038;2024-03-30;Tier downgrade;0;0;3513;Silver
+LOY000141;CUST0039;2024-06-25;Tier downgrade;0;0;884;Silver
+LOY000142;CUST0039;2024-12-09;Points redeemed - Lounge;0;737;147;Silver
+LOY000143;CUST0039;2024-06-12;Tier downgrade;0;0;147;Silver
+LOY000144;CUST0039;2024-08-01;Points redeemed - Lounge;0;147;0;Silver
+LOY000145;CUST0039;2024-06-02;Points redeemed - Lounge;0;0;0;Silver
+LOY000146;CUST0039;2024-10-02;Points redeemed - Lounge;0;0;0;Silver
+LOY000147;CUST0039;2024-04-25;Points redeemed - Upgrade;0;0;0;Silver
+LOY000148;CUST0039;2024-08-25;Points earned - Flight;1251;0;1251;Silver
+LOY000149;CUST0040;2024-03-09;Points redeemed - Lounge;0;448;4393;Explorer
+LOY000150;CUST0040;2024-05-10;Points earned - Partner;776;0;5169;Explorer
+LOY000151;CUST0040;2024-11-27;Points earned - Flight;1021;0;6190;Explorer
+LOY000152;CUST0040;2024-07-08;Points earned - Flight;1196;0;7386;Explorer
+LOY000153;CUST0040;2024-04-07;Points earned - Flight;649;0;8035;Explorer
+LOY000154;CUST0040;2024-07-12;Tier downgrade;0;0;8035;Explorer
+LOY000155;CUST0040;2024-11-05;Tier upgrade;0;0;8035;Explorer
+LOY000156;CUST0041;2024-10-27;Tier downgrade;0;0;2041;Explorer
+LOY000157;CUST0041;2024-12-09;Tier upgrade;0;0;2041;Explorer
+LOY000158;CUST0042;2024-06-04;Points earned - Flight;533;0;3760;Explorer
+LOY000159;CUST0042;2024-04-07;Tier downgrade;0;0;3760;Explorer
+LOY000160;CUST0042;2024-03-01;Tier downgrade;0;0;3760;Explorer
+LOY000161;CUST0042;2024-09-02;Points earned - Partner;1337;0;5097;Explorer
+LOY000162;CUST0043;2024-10-09;Points redeemed - Upgrade;0;489;1971;Silver
+LOY000163;CUST0043;2024-07-13;Points redeemed - Lounge;0;746;1225;Silver
+LOY000164;CUST0043;2024-11-28;Points redeemed - Upgrade;0;515;710;Silver
+LOY000165;CUST0043;2024-05-13;Points redeemed - Upgrade;0;710;0;Silver
+LOY000166;CUST0043;2024-09-11;Points redeemed - Lounge;0;0;0;Silver
+LOY000167;CUST0043;2024-08-28;Points expiry warning;0;0;0;Silver
+LOY000168;CUST0043;2024-06-12;Points earned - Partner;859;0;859;Silver
+LOY000169;CUST0044;2024-03-15;Points earned - Flight;634;0;2946;Explorer
+LOY000170;CUST0045;2024-03-19;Points earned - Partner;775;0;3693;Silver
+LOY000171;CUST0045;2024-04-27;Points redeemed - Lounge;0;783;2910;Silver
+LOY000172;CUST0045;2024-05-05;Points redeemed - Lounge;0;763;2147;Silver
+LOY000173;CUST0045;2024-12-01;Tier downgrade;0;0;2147;Silver
+LOY000174;CUST0045;2024-06-21;Points redeemed - Upgrade;0;700;1447;Silver
+LOY000175;CUST0045;2024-11-24;Tier downgrade;0;0;1447;Silver
+LOY000176;CUST0045;2024-09-08;Points redeemed - Lounge;0;372;1075;Silver
+LOY000177;CUST0046;2024-03-12;Tier downgrade;0;0;1886;Silver
+LOY000178;CUST0046;2024-10-06;Points redeemed - Lounge;0;388;1498;Silver
+LOY000179;CUST0046;2024-10-04;Tier downgrade;0;0;1498;Silver
+LOY000180;CUST0046;2024-01-31;Tier upgrade;0;0;1498;Silver
+LOY000181;CUST0046;2024-01-18;Points expiry warning;0;0;1498;Silver
+LOY000182;CUST0046;2024-02-08;Points expiry warning;0;0;1498;Silver
+LOY000183;CUST0047;2024-03-11;Points expiry warning;0;0;3878;Silver
+LOY000184;CUST0048;2024-01-05;Points earned - Partner;1135;0;2872;Silver
+LOY000185;CUST0048;2024-08-21;Points redeemed - Upgrade;0;261;2611;Silver
+LOY000186;CUST0049;2024-01-09;Points earned - Flight;1189;0;5685;Silver
+LOY000187;CUST0049;2024-10-09;Points redeemed - Lounge;0;212;5473;Silver
+LOY000188;CUST0049;2024-01-09;Tier upgrade;0;0;5473;Silver
+LOY000189;CUST0049;2024-05-20;Tier upgrade;0;0;5473;Silver
+LOY000190;CUST0049;2024-05-26;Points earned - Flight;1128;0;6601;Silver
+LOY000191;CUST0049;2024-12-23;Tier downgrade;0;0;6601;Silver
+LOY000192;CUST0049;2024-08-08;Points expiry warning;0;0;6601;Silver
+LOY000193;CUST0049;2024-04-01;Points earned - Flight;297;0;6898;Silver
+LOY000194;CUST0050;2024-11-13;Tier upgrade;0;0;2072;Explorer
+LOY000195;CUST0050;2024-05-09;Points expiry warning;0;0;2072;Explorer
+LOY000196;CUST0050;2024-06-30;Points redeemed - Upgrade;0;606;1466;Explorer
+LOY000197;CUST0050;2024-02-10;Points redeemed - Upgrade;0;615;851;Explorer
+LOY000198;CUST0051;2024-06-02;Tier downgrade;0;0;2350;Explorer
+LOY000199;CUST0051;2024-02-11;Tier downgrade;0;0;2350;Explorer
+LOY000200;CUST0051;2024-11-28;Points expiry warning;0;0;2350;Explorer
+LOY000201;CUST0051;2024-01-17;Points earned - Flight;930;0;3280;Explorer
+LOY000202;CUST0052;2024-11-22;Points earned - Flight;450;0;1409;Explorer
+LOY000203;CUST0052;2024-02-12;Points redeemed - Lounge;0;644;765;Explorer
+LOY000204;CUST0052;2024-11-26;Points expiry warning;0;0;765;Explorer
+LOY000205;CUST0052;2024-06-18;Tier upgrade;0;0;765;Explorer
+LOY000206;CUST0052;2024-02-18;Tier upgrade;0;0;765;Explorer
+LOY000207;CUST0052;2024-01-22;Points earned - Partner;532;0;1297;Explorer
+LOY000208;CUST0052;2024-12-20;Tier upgrade;0;0;1297;Explorer
+LOY000209;CUST0052;2024-08-31;Points redeemed - Upgrade;0;247;1050;Explorer
+LOY000210;CUST0053;2024-10-15;Tier downgrade;0;0;4948;Gold
+LOY000211;CUST0053;2024-01-17;Points earned - Partner;744;0;5692;Gold
+LOY000212;CUST0053;2024-01-09;Points earned - Partner;1302;0;6994;Gold
+LOY000213;CUST0053;2024-03-14;Points expiry warning;0;0;6994;Gold
+LOY000214;CUST0053;2024-12-30;Points expiry warning;0;0;6994;Gold
+LOY000215;CUST0054;2024-03-24;Tier upgrade;0;0;2951;Explorer
+LOY000216;CUST0054;2024-05-03;Tier upgrade;0;0;2951;Explorer
+LOY000217;CUST0055;2024-06-18;Points redeemed - Lounge;0;343;4585;Silver
+LOY000218;CUST0055;2024-12-18;Tier downgrade;0;0;4585;Silver
+LOY000219;CUST0055;2024-02-10;Tier upgrade;0;0;4585;Silver
+LOY000220;CUST0055;2024-06-26;Points earned - Flight;300;0;4885;Silver
+LOY000221;CUST0055;2024-08-11;Points earned - Partner;255;0;5140;Silver
+LOY000222;CUST0055;2024-06-23;Tier upgrade;0;0;5140;Silver
+LOY000223;CUST0055;2024-11-10;Tier upgrade;0;0;5140;Silver
+LOY000224;CUST0056;2024-11-20;Points redeemed - Upgrade;0;661;81;Explorer
+LOY000225;CUST0056;2024-09-08;Points earned - Partner;828;0;909;Explorer
+LOY000226;CUST0056;2024-10-10;Points redeemed - Lounge;0;642;267;Explorer
+LOY000227;CUST0056;2024-04-05;Tier downgrade;0;0;267;Explorer
+LOY000228;CUST0056;2024-10-26;Tier downgrade;0;0;267;Explorer
+LOY000229;CUST0056;2024-07-13;Points earned - Flight;1366;0;1633;Explorer
+LOY000230;CUST0057;2024-02-12;Points redeemed - Upgrade;0;357;745;Explorer
+LOY000231;CUST0057;2024-07-13;Tier downgrade;0;0;745;Explorer
+LOY000232;CUST0057;2024-11-20;Points earned - Partner;897;0;1642;Explorer
+LOY000233;CUST0057;2024-06-11;Points redeemed - Upgrade;0;309;1333;Explorer
+LOY000234;CUST0058;2024-07-03;Points expiry warning;0;0;4143;Explorer
+LOY000235;CUST0058;2024-05-18;Points earned - Flight;371;0;4514;Explorer
+LOY000236;CUST0058;2024-02-14;Points earned - Partner;982;0;5496;Explorer
+LOY000237;CUST0058;2024-08-17;Tier upgrade;0;0;5496;Explorer
+LOY000238;CUST0058;2024-10-11;Tier upgrade;0;0;5496;Explorer
+LOY000239;CUST0059;2024-06-30;Tier upgrade;0;0;1234;Explorer
+LOY000240;CUST0060;2024-01-07;Points redeemed - Upgrade;0;623;3032;Explorer
+LOY000241;CUST0060;2024-07-17;Points expiry warning;0;0;3032;Explorer
+LOY000242;CUST0060;2024-02-13;Tier downgrade;0;0;3032;Explorer
+LOY000243;CUST0060;2024-10-13;Points earned - Partner;1271;0;4303;Explorer
+LOY000244;CUST0060;2024-09-23;Points earned - Partner;879;0;5182;Explorer
+LOY000245;CUST0060;2024-03-27;Points earned - Partner;650;0;5832;Explorer
+LOY000246;CUST0061;2024-02-02;Points earned - Partner;990;0;2685;Explorer
+LOY000247;CUST0061;2024-05-21;Points redeemed - Lounge;0;506;2179;Explorer
+LOY000248;CUST0061;2024-09-04;Points expiry warning;0;0;2179;Explorer
+LOY000249;CUST0061;2024-02-09;Points redeemed - Upgrade;0;457;1722;Explorer
+LOY000250;CUST0061;2024-05-06;Tier downgrade;0;0;1722;Explorer
+LOY000251;CUST0061;2024-11-16;Points redeemed - Lounge;0;400;1322;Explorer
+LOY000252;CUST0061;2024-08-22;Points earned - Flight;377;0;1699;Explorer
+LOY000253;CUST0061;2024-06-04;Points earned - Flight;910;0;2609;Explorer
+LOY000254;CUST0062;2024-08-13;Points redeemed - Upgrade;0;640;2559;Explorer
+LOY000255;CUST0062;2024-11-29;Tier upgrade;0;0;2559;Explorer
+LOY000256;CUST0062;2024-03-10;Points redeemed - Upgrade;0;528;2031;Explorer
+LOY000257;CUST0062;2024-11-04;Tier downgrade;0;0;2031;Explorer
+LOY000258;CUST0062;2024-04-12;Points redeemed - Lounge;0;521;1510;Explorer
+LOY000259;CUST0062;2024-03-31;Points redeemed - Lounge;0;526;984;Explorer
+LOY000260;CUST0062;2024-05-29;Tier downgrade;0;0;984;Explorer
+LOY000261;CUST0063;2024-06-15;Points redeemed - Lounge;0;487;1998;Silver
+LOY000262;CUST0063;2024-07-20;Points redeemed - Upgrade;0;316;1682;Silver
+LOY000263;CUST0063;2024-10-15;Points earned - Partner;1312;0;2994;Silver
+LOY000264;CUST0063;2024-10-06;Points earned - Partner;1496;0;4490;Silver
+LOY000265;CUST0063;2024-10-08;Points earned - Flight;1045;0;5535;Silver
+LOY000266;CUST0063;2024-12-28;Points earned - Partner;997;0;6532;Silver
+LOY000267;CUST0063;2024-05-29;Points expiry warning;0;0;6532;Silver
+LOY000268;CUST0063;2024-12-20;Points earned - Flight;937;0;7469;Silver
+LOY000269;CUST0064;2024-05-03;Points redeemed - Upgrade;0;357;2623;Silver
+LOY000270;CUST0064;2024-08-04;Points expiry warning;0;0;2623;Silver
+LOY000271;CUST0064;2024-07-12;Points earned - Flight;1019;0;3642;Silver
+LOY000272;CUST0065;2024-09-30;Tier upgrade;0;0;3783;Gold
+LOY000273;CUST0065;2024-12-20;Points redeemed - Lounge;0;756;3027;Gold
+LOY000274;CUST0065;2024-01-19;Points expiry warning;0;0;3027;Gold
+LOY000275;CUST0065;2024-07-03;Tier downgrade;0;0;3027;Gold
+LOY000276;CUST0065;2024-10-01;Tier upgrade;0;0;3027;Gold
+LOY000277;CUST0065;2024-11-22;Points earned - Flight;323;0;3350;Gold
+LOY000278;CUST0065;2024-05-07;Tier downgrade;0;0;3350;Gold
+LOY000279;CUST0065;2024-12-06;Points redeemed - Upgrade;0;370;2980;Gold
+LOY000280;CUST0066;2024-06-18;Points expiry warning;0;0;3773;Silver
+LOY000281;CUST0067;2024-05-12;Points earned - Partner;1145;0;2452;Explorer
+LOY000282;CUST0068;2024-07-10;Points redeemed - Lounge;0;674;3477;Silver
+LOY000283;CUST0068;2024-12-13;Tier upgrade;0;0;3477;Silver
+LOY000284;CUST0068;2024-12-19;Tier upgrade;0;0;3477;Silver
+LOY000285;CUST0068;2024-03-18;Points redeemed - Upgrade;0;225;3252;Silver
+LOY000286;CUST0069;2024-02-13;Points earned - Flight;390;0;4297;Explorer
+LOY000287;CUST0069;2024-06-27;Points redeemed - Upgrade;0;551;3746;Explorer
+LOY000288;CUST0069;2024-08-21;Points expiry warning;0;0;3746;Explorer
+LOY000289;CUST0069;2024-04-15;Tier upgrade;0;0;3746;Explorer
+LOY000290;CUST0069;2024-09-04;Points redeemed - Upgrade;0;687;3059;Explorer
+LOY000291;CUST0070;2024-02-04;Points redeemed - Upgrade;0;245;2867;Explorer
+LOY000292;CUST0070;2024-12-29;Points earned - Flight;146;0;3013;Explorer
+LOY000293;CUST0070;2024-06-24;Tier downgrade;0;0;3013;Explorer
+LOY000294;CUST0070;2024-02-25;Tier downgrade;0;0;3013;Explorer
+LOY000295;CUST0070;2024-03-25;Tier downgrade;0;0;3013;Explorer
+LOY000296;CUST0070;2024-05-04;Tier upgrade;0;0;3013;Explorer
+LOY000297;CUST0070;2024-03-30;Tier upgrade;0;0;3013;Explorer
+LOY000298;CUST0070;2024-03-22;Points redeemed - Upgrade;0;773;2240;Explorer
+LOY000299;CUST0071;2024-07-26;Tier downgrade;0;0;2399;Explorer
+LOY000300;CUST0071;2024-04-04;Points earned - Partner;1411;0;3810;Explorer
+LOY000301;CUST0071;2024-12-02;Points redeemed - Lounge;0;605;3205;Explorer
+LOY000302;CUST0071;2024-01-15;Tier downgrade;0;0;3205;Explorer
+LOY000303;CUST0071;2024-11-10;Points earned - Partner;1020;0;4225;Explorer
+LOY000304;CUST0071;2024-10-30;Points redeemed - Lounge;0;598;3627;Explorer
+LOY000305;CUST0071;2024-01-03;Tier downgrade;0;0;3627;Explorer
+LOY000306;CUST0071;2024-04-19;Points earned - Partner;670;0;4297;Explorer
+LOY000307;CUST0072;2024-10-01;Points earned - Partner;849;0;2182;Silver
+LOY000308;CUST0072;2024-06-15;Points earned - Partner;1037;0;3219;Silver
+LOY000309;CUST0073;2024-11-23;Points redeemed - Upgrade;0;597;4226;Explorer
+LOY000310;CUST0073;2024-11-08;Points redeemed - Lounge;0;316;3910;Explorer
+LOY000311;CUST0073;2024-06-27;Points redeemed - Upgrade;0;668;3242;Explorer
+LOY000312;CUST0073;2024-11-12;Points earned - Partner;1479;0;4721;Explorer
+LOY000313;CUST0073;2024-12-27;Points expiry warning;0;0;4721;Explorer
+LOY000314;CUST0073;2024-06-01;Tier upgrade;0;0;4721;Explorer
+LOY000315;CUST0073;2024-10-29;Points earned - Flight;1476;0;6197;Explorer
+LOY000316;CUST0073;2024-03-09;Points redeemed - Upgrade;0;320;5877;Explorer
+LOY000317;CUST0074;2024-07-10;Tier downgrade;0;0;1999;Explorer
+LOY000318;CUST0074;2024-03-13;Tier upgrade;0;0;1999;Explorer
+LOY000319;CUST0075;2024-08-04;Points earned - Partner;1096;0;4739;Explorer
+LOY000320;CUST0075;2024-11-21;Tier upgrade;0;0;4739;Explorer
+LOY000321;CUST0075;2024-12-21;Tier downgrade;0;0;4739;Explorer
+LOY000322;CUST0076;2024-09-07;Points redeemed - Upgrade;0;343;1523;Gold
+LOY000323;CUST0076;2024-04-05;Points redeemed - Upgrade;0;661;862;Gold
+LOY000324;CUST0076;2024-11-13;Points earned - Flight;835;0;1697;Gold
+LOY000325;CUST0077;2024-04-09;Points expiry warning;0;0;1618;Gold
+LOY000326;CUST0077;2024-07-15;Tier upgrade;0;0;1618;Gold
+LOY000327;CUST0077;2024-09-15;Tier downgrade;0;0;1618;Gold
+LOY000328;CUST0077;2024-09-10;Points redeemed - Lounge;0;703;915;Gold
+LOY000329;CUST0077;2024-07-31;Tier downgrade;0;0;915;Gold
+LOY000330;CUST0077;2024-08-15;Points redeemed - Lounge;0;371;544;Gold
+LOY000331;CUST0077;2024-02-12;Tier upgrade;0;0;544;Gold
+LOY000332;CUST0077;2024-01-16;Points expiry warning;0;0;544;Gold
+LOY000333;CUST0078;2024-05-20;Points earned - Partner;1201;0;1968;Silver
+LOY000334;CUST0078;2024-05-27;Points earned - Partner;1036;0;3004;Silver
+LOY000335;CUST0078;2024-10-16;Tier downgrade;0;0;3004;Silver
+LOY000336;CUST0078;2024-09-10;Tier upgrade;0;0;3004;Silver
+LOY000337;CUST0078;2024-09-18;Points earned - Flight;1272;0;4276;Silver
+LOY000338;CUST0079;2024-01-22;Points expiry warning;0;0;4940;Explorer
+LOY000339;CUST0079;2024-08-13;Tier upgrade;0;0;4940;Explorer
+LOY000340;CUST0079;2024-04-21;Points redeemed - Lounge;0;304;4636;Explorer
+LOY000341;CUST0079;2024-11-30;Points expiry warning;0;0;4636;Explorer
+LOY000342;CUST0079;2024-05-06;Points redeemed - Upgrade;0;233;4403;Explorer
+LOY000343;CUST0079;2024-08-18;Points redeemed - Upgrade;0;556;3847;Explorer
+LOY000344;CUST0080;2024-03-01;Points expiry warning;0;0;4096;Gold
+LOY000345;CUST0080;2024-05-01;Points earned - Partner;1304;0;5400;Gold
+LOY000346;CUST0081;2024-11-11;Points earned - Partner;523;0;2382;Silver
+LOY000347;CUST0081;2024-04-15;Points expiry warning;0;0;2382;Silver
+LOY000348;CUST0081;2024-01-31;Tier upgrade;0;0;2382;Silver
+LOY000349;CUST0081;2024-06-28;Tier upgrade;0;0;2382;Silver
+LOY000350;CUST0081;2024-05-23;Tier upgrade;0;0;2382;Silver
+LOY000351;CUST0081;2024-10-02;Points earned - Partner;762;0;3144;Silver
+LOY000352;CUST0081;2024-12-26;Points redeemed - Upgrade;0;496;2648;Silver
+LOY000353;CUST0082;2024-07-29;Points earned - Flight;667;0;2277;Silver
+LOY000354;CUST0082;2024-12-01;Points earned - Partner;371;0;2648;Silver
+LOY000355;CUST0083;2024-12-12;Points redeemed - Lounge;0;701;1826;Explorer
+LOY000356;CUST0083;2024-03-13;Tier upgrade;0;0;1826;Explorer
+LOY000357;CUST0083;2024-11-19;Points redeemed - Upgrade;0;624;1202;Explorer
+LOY000358;CUST0083;2024-07-11;Points redeemed - Lounge;0;277;925;Explorer
+LOY000359;CUST0083;2024-11-20;Points expiry warning;0;0;925;Explorer
+LOY000360;CUST0083;2024-02-17;Points redeemed - Lounge;0;727;198;Explorer
+LOY000361;CUST0084;2024-09-06;Points redeemed - Upgrade;0;795;3429;Silver
+LOY000362;CUST0084;2024-01-02;Points expiry warning;0;0;3429;Silver
+LOY000363;CUST0084;2024-02-17;Tier downgrade;0;0;3429;Silver
+LOY000364;CUST0084;2024-08-22;Tier downgrade;0;0;3429;Silver
+LOY000365;CUST0084;2024-12-06;Tier downgrade;0;0;3429;Silver
+LOY000366;CUST0084;2024-07-02;Points expiry warning;0;0;3429;Silver
+LOY000367;CUST0085;2024-08-07;Points expiry warning;0;0;2284;Explorer
+LOY000368;CUST0085;2024-04-18;Points redeemed - Lounge;0;474;1810;Explorer
+LOY000369;CUST0085;2024-06-14;Points expiry warning;0;0;1810;Explorer
+LOY000370;CUST0085;2024-05-25;Points redeemed - Upgrade;0;760;1050;Explorer
+LOY000371;CUST0085;2024-10-22;Points earned - Partner;1259;0;2309;Explorer
+LOY000372;CUST0085;2024-09-05;Points expiry warning;0;0;2309;Explorer
+LOY000373;CUST0085;2024-06-24;Tier downgrade;0;0;2309;Explorer
+LOY000374;CUST0086;2024-11-16;Points expiry warning;0;0;1315;Silver
+LOY000375;CUST0087;2024-03-21;Points redeemed - Lounge;0;667;850;Silver
+LOY000376;CUST0088;2024-12-18;Points earned - Partner;1431;0;3588;Explorer
+LOY000377;CUST0088;2024-06-03;Points earned - Partner;661;0;4249;Explorer
+LOY000378;CUST0088;2024-02-17;Tier downgrade;0;0;4249;Explorer
+LOY000379;CUST0088;2024-07-03;Points redeemed - Upgrade;0;284;3965;Explorer
+LOY000380;CUST0088;2024-07-09;Tier downgrade;0;0;3965;Explorer
+LOY000381;CUST0088;2024-11-28;Points earned - Partner;206;0;4171;Explorer
+LOY000382;CUST0088;2024-07-21;Tier downgrade;0;0;4171;Explorer
+LOY000383;CUST0089;2024-12-01;Points earned - Flight;294;0;4310;Explorer
+LOY000384;CUST0089;2024-01-01;Points earned - Partner;1076;0;5386;Explorer
+LOY000385;CUST0089;2024-02-09;Points earned - Partner;1315;0;6701;Explorer
+LOY000386;CUST0089;2024-04-25;Tier upgrade;0;0;6701;Explorer
+LOY000387;CUST0090;2024-12-22;Points redeemed - Upgrade;0;323;243;Silver
+LOY000388;CUST0091;2024-09-01;Points earned - Flight;568;0;2150;Gold
+LOY000389;CUST0091;2024-07-15;Points earned - Flight;309;0;2459;Gold
+LOY000390;CUST0091;2024-02-22;Points redeemed - Upgrade;0;576;1883;Gold
+LOY000391;CUST0091;2024-06-02;Points earned - Partner;883;0;2766;Gold
+LOY000392;CUST0091;2024-03-09;Tier downgrade;0;0;2766;Gold
+LOY000393;CUST0091;2024-12-12;Points earned - Partner;240;0;3006;Gold
+LOY000394;CUST0091;2024-09-28;Tier upgrade;0;0;3006;Gold
+LOY000395;CUST0092;2024-06-28;Tier downgrade;0;0;4105;Explorer
+LOY000396;CUST0092;2024-04-19;Tier downgrade;0;0;4105;Explorer
+LOY000397;CUST0092;2024-03-18;Points redeemed - Lounge;0;653;3452;Explorer
+LOY000398;CUST0093;2024-03-12;Points expiry warning;0;0;1323;Gold
+LOY000399;CUST0093;2024-03-04;Tier upgrade;0;0;1323;Gold
+LOY000400;CUST0094;2024-06-10;Points expiry warning;0;0;4017;Silver
+LOY000401;CUST0094;2024-03-12;Points earned - Partner;667;0;4684;Silver
+LOY000402;CUST0094;2024-11-26;Points earned - Flight;608;0;5292;Silver
+LOY000403;CUST0094;2024-10-10;Tier upgrade;0;0;5292;Silver
+LOY000404;CUST0094;2024-11-03;Tier downgrade;0;0;5292;Silver
+LOY000405;CUST0094;2024-11-07;Points redeemed - Upgrade;0;227;5065;Silver
+LOY000406;CUST0095;2024-09-22;Tier upgrade;0;0;2183;Silver
+LOY000407;CUST0095;2024-09-17;Points earned - Partner;902;0;3085;Silver
+LOY000408;CUST0095;2024-05-31;Tier downgrade;0;0;3085;Silver
+LOY000409;CUST0095;2024-01-28;Points expiry warning;0;0;3085;Silver
+LOY000410;CUST0095;2024-05-02;Points redeemed - Lounge;0;595;2490;Silver
+LOY000411;CUST0096;2024-09-27;Points earned - Flight;839;0;1920;Explorer
+LOY000412;CUST0096;2024-06-11;Points earned - Partner;892;0;2812;Explorer
+LOY000413;CUST0096;2024-10-18;Points redeemed - Lounge;0;574;2238;Explorer
+LOY000414;CUST0096;2024-10-06;Tier downgrade;0;0;2238;Explorer
+LOY000415;CUST0096;2024-03-29;Points expiry warning;0;0;2238;Explorer
+LOY000416;CUST0096;2024-08-29;Points expiry warning;0;0;2238;Explorer
+LOY000417;CUST0096;2024-02-07;Points earned - Flight;1302;0;3540;Explorer
+LOY000418;CUST0096;2024-02-04;Points earned - Flight;636;0;4176;Explorer
+LOY000419;CUST0097;2024-09-16;Points redeemed - Upgrade;0;713;3047;Explorer
+LOY000420;CUST0098;2024-02-12;Tier downgrade;0;0;3795;Silver
+LOY000421;CUST0098;2024-10-01;Tier upgrade;0;0;3795;Silver
+LOY000422;CUST0098;2024-11-11;Points earned - Partner;668;0;4463;Silver
+LOY000423;CUST0098;2024-02-12;Points redeemed - Upgrade;0;280;4183;Silver
+LOY000424;CUST0098;2024-09-18;Points earned - Partner;418;0;4601;Silver
+LOY000425;CUST0098;2024-10-01;Points redeemed - Upgrade;0;600;4001;Silver
+LOY000426;CUST0098;2024-10-27;Tier downgrade;0;0;4001;Silver
+LOY000427;CUST0099;2024-12-23;Points redeemed - Lounge;0;444;2596;Silver
+LOY000428;CUST0099;2024-01-30;Points earned - Partner;276;0;2872;Silver
+LOY000429;CUST0100;2024-11-09;Tier upgrade;0;0;4214;Gold
+LOY000430;CUST0100;2024-01-29;Points redeemed - Upgrade;0;379;3835;Gold
+LOY000431;CUST0101;2024-03-24;Points redeemed - Lounge;0;555;37;Explorer
+LOY000432;CUST0101;2024-09-24;Tier upgrade;0;0;37;Explorer
+LOY000433;CUST0101;2024-05-12;Points earned - Partner;861;0;898;Explorer
+LOY000434;CUST0102;2024-01-16;Points redeemed - Upgrade;0;639;828;Explorer
+LOY000435;CUST0102;2024-05-19;Tier upgrade;0;0;828;Explorer
+LOY000436;CUST0102;2024-02-02;Points redeemed - Upgrade;0;790;38;Explorer
+LOY000437;CUST0102;2024-11-17;Points earned - Flight;1116;0;1154;Explorer
+LOY000438;CUST0102;2024-08-21;Tier upgrade;0;0;1154;Explorer
+LOY000439;CUST0103;2024-07-07;Points earned - Partner;622;0;2489;Explorer
+LOY000440;CUST0103;2024-02-22;Tier upgrade;0;0;2489;Explorer
+LOY000441;CUST0103;2024-12-11;Tier downgrade;0;0;2489;Explorer
+LOY000442;CUST0103;2024-02-29;Points earned - Partner;1142;0;3631;Explorer
+LOY000443;CUST0103;2024-01-02;Points earned - Flight;125;0;3756;Explorer
+LOY000444;CUST0103;2024-05-05;Points earned - Flight;1066;0;4822;Explorer
+LOY000445;CUST0103;2024-07-05;Points redeemed - Lounge;0;353;4469;Explorer
+LOY000446;CUST0103;2024-04-01;Points expiry warning;0;0;4469;Explorer
+LOY000447;CUST0104;2024-06-13;Points earned - Partner;952;0;3291;Explorer
+LOY000448;CUST0104;2024-06-12;Points redeemed - Upgrade;0;279;3012;Explorer
+LOY000449;CUST0104;2024-10-19;Points redeemed - Upgrade;0;322;2690;Explorer
+LOY000450;CUST0104;2024-09-14;Tier downgrade;0;0;2690;Explorer
+LOY000451;CUST0104;2024-01-27;Points earned - Partner;557;0;3247;Explorer
+LOY000452;CUST0104;2024-09-21;Points earned - Flight;921;0;4168;Explorer
+LOY000453;CUST0104;2024-02-05;Points redeemed - Lounge;0;489;3679;Explorer
+LOY000454;CUST0105;2024-02-14;Tier upgrade;0;0;3181;Silver
+LOY000455;CUST0105;2024-08-21;Points earned - Flight;855;0;4036;Silver
+LOY000456;CUST0105;2024-04-12;Points redeemed - Upgrade;0;777;3259;Silver
+LOY000457;CUST0105;2024-06-04;Tier downgrade;0;0;3259;Silver
+LOY000458;CUST0105;2024-11-14;Points earned - Partner;1050;0;4309;Silver
+LOY000459;CUST0106;2024-10-06;Points expiry warning;0;0;2100;Explorer
+LOY000460;CUST0106;2024-05-05;Points earned - Partner;113;0;2213;Explorer
+LOY000461;CUST0106;2024-07-28;Points earned - Flight;577;0;2790;Explorer
+LOY000462;CUST0106;2024-10-04;Points redeemed - Upgrade;0;209;2581;Explorer
+LOY000463;CUST0106;2024-06-20;Points earned - Flight;1446;0;4027;Explorer
+LOY000464;CUST0106;2024-07-11;Points expiry warning;0;0;4027;Explorer
+LOY000465;CUST0106;2024-06-06;Points earned - Flight;520;0;4547;Explorer
+LOY000466;CUST0106;2024-09-28;Points earned - Partner;959;0;5506;Explorer
+LOY000467;CUST0107;2024-12-30;Points redeemed - Upgrade;0;295;1371;Explorer
+LOY000468;CUST0108;2024-07-30;Tier downgrade;0;0;4757;Explorer
+LOY000469;CUST0108;2024-07-09;Points redeemed - Lounge;0;286;4471;Explorer
+LOY000470;CUST0108;2024-10-24;Points earned - Flight;1135;0;5606;Explorer
+LOY000471;CUST0108;2024-03-09;Tier downgrade;0;0;5606;Explorer
+LOY000472;CUST0109;2024-08-10;Tier downgrade;0;0;1010;Silver
+LOY000473;CUST0109;2024-03-07;Points earned - Partner;697;0;1707;Silver
+LOY000474;CUST0110;2024-12-24;Points expiry warning;0;0;3719;Explorer
+LOY000475;CUST0110;2024-06-16;Points redeemed - Upgrade;0;663;3056;Explorer
+LOY000476;CUST0110;2024-05-19;Points earned - Partner;252;0;3308;Explorer
+LOY000477;CUST0110;2024-04-13;Points earned - Partner;1297;0;4605;Explorer
+LOY000478;CUST0110;2024-02-25;Points earned - Partner;316;0;4921;Explorer
+LOY000479;CUST0110;2024-03-25;Points redeemed - Lounge;0;677;4244;Explorer
+LOY000480;CUST0111;2024-07-02;Points expiry warning;0;0;4890;Explorer
+LOY000481;CUST0111;2024-04-16;Points redeemed - Lounge;0;515;4375;Explorer
+LOY000482;CUST0112;2024-03-21;Points expiry warning;0;0;1240;Explorer
+LOY000483;CUST0112;2024-12-17;Points redeemed - Upgrade;0;241;999;Explorer
+LOY000484;CUST0113;2024-02-16;Tier downgrade;0;0;1715;Explorer
+LOY000485;CUST0113;2024-05-07;Points redeemed - Upgrade;0;605;1110;Explorer
+LOY000486;CUST0113;2024-09-19;Points earned - Flight;1486;0;2596;Explorer
+LOY000487;CUST0113;2024-06-02;Points redeemed - Upgrade;0;378;2218;Explorer
+LOY000488;CUST0113;2024-01-16;Points redeemed - Lounge;0;663;1555;Explorer
+LOY000489;CUST0113;2024-10-11;Tier downgrade;0;0;1555;Explorer
+LOY000490;CUST0114;2024-02-22;Points expiry warning;0;0;4285;Silver
+LOY000491;CUST0114;2024-03-12;Points earned - Flight;124;0;4409;Silver
+LOY000492;CUST0115;2024-04-11;Points expiry warning;0;0;1570;Explorer
+LOY000493;CUST0115;2024-07-24;Points redeemed - Upgrade;0;286;1284;Explorer
+LOY000494;CUST0115;2024-10-25;Tier upgrade;0;0;1284;Explorer
+LOY000495;CUST0115;2024-05-12;Points expiry warning;0;0;1284;Explorer
+LOY000496;CUST0116;2024-11-26;Points redeemed - Lounge;0;331;1788;Explorer
+LOY000497;CUST0116;2024-02-17;Points expiry warning;0;0;1788;Explorer
+LOY000498;CUST0117;2024-01-22;Points redeemed - Lounge;0;251;1252;Silver
+LOY000499;CUST0117;2024-03-27;Tier upgrade;0;0;1252;Silver
+LOY000500;CUST0117;2024-08-09;Points expiry warning;0;0;1252;Silver

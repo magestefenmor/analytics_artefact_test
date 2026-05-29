@@ -1,0 +1,59 @@
+table Measures = {
+  measures:
+    [
+      {
+        name: "Total Revenue"
+        expression: "SUM(fact_flights[total_revenue_usd])"
+        formatString: "#,0.00"
+        displayFolder: "Key Metrics"
+      },
+      {
+        name: "Total Cost"
+        expression: "SUM(fact_flight_costs[total_cost_usd])"
+        formatString: "#,0.00"
+        displayFolder: "Key Metrics"
+      },
+      {
+        name: "Total Margin"
+        expression: "[Total Revenue] - [Total Cost]"
+        formatString: "#,0.00"
+        displayFolder: "Key Metrics"
+      },
+      {
+        name: "Margin %"
+        expression: "DIVIDE([Total Margin], [Total Revenue])"
+        formatString: "0.0%"
+        displayFolder: "Key Metrics"
+      },
+      {
+        name: "Avg Load Factor"
+        expression: "AVERAGE(fact_flights[load_factor])"
+        formatString: "0.0%"
+        displayFolder: "Operations"
+      },
+      {
+        name: "On Time Rate"
+        expression: "DIVIDE(SUM(fact_flights[is_on_time]), COUNTROWS(fact_flights))"
+        formatString: "0.0%"
+        displayFolder: "Operations"
+      },
+      {
+        name: "Ancillary Revenue"
+        expression: "SUM(fact_bookings[ancillary_revenue_usd])"
+        formatString: "#,0.00"
+        displayFolder: "Revenue Analysis"
+      },
+      {
+        name: "Ancillary Attach Rate"
+        expression: "DIVIDE(SUM(fact_bookings[has_ancillary]), COUNTROWS(fact_bookings))"
+        formatString: "0.0%"
+        displayFolder: "Revenue Analysis"
+      },
+      {
+        name: "Customers At Risk"
+        expression: "CALCULATE(DISTINCTCOUNT(dim_customers[customer_id]), ont_customer_labels[churn_risk_score] > 60)"
+        formatString: "#,0"
+        displayFolder: "Customer Health"
+      }
+    ]
+}

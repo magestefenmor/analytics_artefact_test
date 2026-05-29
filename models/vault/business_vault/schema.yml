@@ -1,0 +1,80 @@
+version: 2
+
+models:
+
+  # ── PIT TABLES ──────────────────────────────────────────────
+  - name: pit_flight
+    description: >
+      Point-In-Time table pour hub_flight.
+      Grain : 1 ligne par (flight_hk × snapshot_date).
+      Satellites couverts : sat_flight_operations, sat_flight_costs,
+      sat_flight_sentiment.
+      Usage : garantit la cohérence temporelle entre satellites
+      d'un même vol. Remplace N jointures temporelles par 1.
+    columns:
+      - name: flight_hk
+        tests: [not_null]
+      - name: snapshot_date
+        tests: [not_null]
+      - name: sat_flight_operations_hk
+        description: "GHOST si satellite non chargé à cette date"
+      - name: sat_flight_costs_hk
+        description: "GHOST si satellite non chargé à cette date"
+      - name: sat_flight_sentiment_hk
+        description: "GHOST si satellite non chargé à cette date"
+
+  - name: pit_customer
+    description: >
+      Point-In-Time table pour hub_customer.
+      Grain : 1 ligne par (customer_hk × snapshot_date).
+      Satellites couverts : sat_customer_profile, sat_customer_loyalty.
+      Usage : reconstituer le profil complet d'un client
+      à n'importe quelle date historique.
+    columns:
+      - name: customer_hk
+        tests: [not_null]
+      - name: snapshot_date
+        tests: [not_null]
+
+  - name: pit_route
+    description: >
+      Point-In-Time table pour hub_route.
+      Grain : 1 ligne par (route_hk × snapshot_date).
+      Satellites couverts : sat_route_details.
+    columns:
+      - name: route_hk
+        tests: [not_null]
+      - name: snapshot_date
+        tests: [not_null]
+
+  # ── BRIDGE TABLES ────────────────────────────────────────────
+  - name: bridge_flight_booking
+    description: >
+      Bridge table — chemin hub_flight → route + bookings + customers.
+      Grain : 1 ligne par (flight × booking × customer).
+      Usage : fact_flights lit ce bridge au lieu de traverser
+      5 hubs/links manuellement. Optimisé pour analyses revenue par vol.
+      Les vols sans réservation ont lnk_booking_hk = NULL et sont conservés
+      grâce à un LEFT JOIN. Les réservations sans vol sont filtrées
+      (WHERE booking_id IS NOT NULL) pour éviter les doublons clients.
+      Clé d'agrégation naturelle : flight_hk.
+    columns:
+      - name: flight_hk
+        tests: [not_null]
+      - name: lnk_booking_hk
+        tests:
+          - not_null:
+              where: "booking_id IS NOT NULL"
+
+  - name: bridge_customer_flight
+    description: >
+      Bridge table — chemin hub_customer → bookings + flights + routes.
+      Grain : 1 ligne par (customer × booking × flight × route).
+      Usage : sem_kpis_customer agrège tous les vols d'un client
+      sans traverser le vault manuellement.
+      Clé d'agrégation naturelle : customer_hk.
+      Différence vs bridge_flight_booking : grain client, LEFT JOIN
+      (conserve les clients sans vol).
+    columns:
+      - name: customer_hk
+        tests: [not_null]

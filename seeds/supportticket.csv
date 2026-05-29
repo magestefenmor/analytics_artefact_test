@@ -1,0 +1,121 @@
+ticket_id;customer_id;booking_id;created_date;priority;category;ticket_text;status;resolution_days;customer_tier
+TKT000001;CUST0156;BKG000032;2025-04-19;Urgent;Bagage perdu/endommagé;Valise arrivée avec serrure forcée et objets manquants (154 USD). Référence HF4555 — aucune réponse depuis 2 jours.;Résolu;1;Silver
+TKT000002;CUST0274;BKG001329;2025-07-03;Urgent;Retard / Annulation;Retard de 6h sur HF348. J'ai raté ma correspondance et dû payer un hôtel 486 USD. Je demande le remboursement.;Fermé sans suite;N/A;Explorer
+TKT000003;CUST0075;BKG000034;2025-05-14;Medium;Remboursement;Refund for cancelled flight HF580 not received after 7 days. Amount: 400 USD. Three follow-up emails ignored.;Résolu;3;Explorer
+TKT000004;CUST0252;BKG000944;2025-03-28;Urgent;Upgrade / Ancillaire;My pre-paid extra baggage allowance was not recognized at check-in for flight HF437. I paid 591 USD twice.;Résolu;1;Silver
+TKT000005;CUST0119;BKG000140;2025-12-29;High;Information vol;Impossible d'obtenir une information sur le statut du vol HF655. Site web non mis à jour, hotline saturée depuis 2h.;En cours;5;Explorer
+TKT000006;CUST0147;BKG000036;2025-09-15;Low;Retard / Annulation;Flight HF599 delayed 2h with zero communication. As Gold member I expect a minimum of transparency and assistance.;Résolu;3;Explorer
+TKT000007;CUST0204;BKG000162;2025-07-11;High;Fidélité / Points;Mon tier Gold n'a pas été renouvelé malgré les 1533 miles accumulés cette année. Compte : CUST0182.;Fermé sans suite;N/A;Explorer
+TKT000008;CUST0005;BKG001440;2025-03-29;Medium;Service bord;Équipage vol HF947 peu professionnel. Repas spécial non servi malgré réservation confirmée. Aucune excuse présentée.;En cours;13;Explorer
+TKT000009;CUST0289;BKG001348;2025-01-17;Medium;Bagage perdu/endommagé;My stroller checked in at ABJ arrived at SPY completely destroyed. Cost 566 USD — essential for my infant. No immediate solution offered.;Escaladé;N/A;Explorer
+TKT000010;CUST0277;BKG000680;2025-07-16;Urgent;Retard / Annulation;Flight HF870 delayed 5h with zero communication. As Gold member I expect a minimum of transparency and assistance.;Fermé sans suite;N/A;Explorer
+TKT000011;CUST0016;BKG001299;2025-05-20;High;Fidélité / Points;Mon tier Gold n'a pas été renouvelé malgré les 1895 miles accumulés cette année. Compte : CUST0204.;En cours;11;Silver
+TKT000012;CUST0079;BKG000779;2025-12-31;Urgent;Fidélité / Points;Mon tier Gold n'a pas été renouvelé malgré les 801 miles accumulés cette année. Compte : CUST0043.;Résolu;2;Explorer
+TKT000013;CUST0230;BKG001141;2025-10-12;High;Fidélité / Points;Mon tier Gold n'a pas été renouvelé malgré les 857 miles accumulés cette année. Compte : CUST0096.;Résolu;1;Silver
+TKT000014;CUST0293;BKG001068;2025-03-28;Medium;Upgrade / Ancillaire;J'ai payé 378 USD pour une sélection de siège non respectée lors de l'embarquement sur HF712. Remboursement demandé.;Résolu;3;Explorer
+TKT000015;CUST0127;BKG001477;2025-11-17;Medium;Information vol;I need to know the baggage policy for route ABJ-BRU with my current booking. Website information is contradictory.;Résolu;1;Explorer
+TKT000016;CUST0165;BKG001236;2025-12-22;Medium;Service bord;Cabin crew on HF505 was rude when I asked for a blanket. As Silver member this is below expected standards.;Résolu;1;Explorer
+TKT000017;CUST0289;BKG000410;2025-10-31;Medium;Retard / Annulation;Vol HF852 annulé sans solution alternative satisfaisante. 413 USD remboursés sur 685 USD payés. Remboursement complet exigé.;Résolu;2;Explorer
+TKT000018;CUST0079;BKG001465;2025-08-05;Low;Upgrade / Ancillaire;Upgrade business acheté en ligne non appliqué sur vol HF314. J'ai voyagé en économie malgré le paiement de 498 USD.;Résolu;3;Silver
+TKT000019;CUST0128;BKG001347;2025-12-07;Medium;Fidélité / Points;Mes 2932 points suite au vol HF618 du 2025-12-21 ne sont toujours pas crédités sur mon compte fidélité après 10 jours.;En cours;11;Explorer
+TKT000020;CUST0298;BKG001409;2025-10-22;Low;Remboursement;Refund for cancelled flight HF915 not received after 2 days. Amount: 180 USD. Three follow-up emails ignored.;En cours;8;Silver
+TKT000021;CUST0073;BKG000714;2025-06-09;Medium;Retard / Annulation;Flight HF254 delayed 2h with zero communication. As Gold member I expect a minimum of transparency and assistance.;Escaladé;N/A;Explorer
+TKT000022;CUST0056;BKG001387;2025-03-26;Medium;Remboursement;J'ai annulé mon vol flex — remboursement 148 USD toujours pas crédité. Référence : HF1732.;Résolu;1;Explorer
+TKT000023;CUST0220;BKG000797;2025-01-03;Medium;Information vol;I need to know the baggage policy for route ABJ-JNB with my current booking. Website information is contradictory.;Résolu;2;Explorer
+TKT000024;CUST0251;BKG001081;2025-11-24;Medium;Information vol;Quels documents sont requis pour voyager sur la route ABJ-SPY ? Les informations sur le site sont contradictoires.;En cours;12;Explorer
+TKT000025;CUST0157;BKG000240;2025-04-04;Medium;Remboursement;Remboursement demandé le 2025-08-23 pour booking HF3194. 4 jours sans réponse. C'est inacceptable.;En cours;8;Silver
+TKT000026;CUST0096;BKG000645;2025-08-19;High;Remboursement;Remboursement demandé le 2025-08-05 pour booking HF3733. 9 jours sans réponse. C'est inacceptable.;Résolu;3;Explorer
+TKT000027;CUST0086;BKG000170;2025-10-17;Low;Upgrade / Ancillaire;Upgrade business acheté en ligne non appliqué sur vol HF934. J'ai voyagé en économie malgré le paiement de 586 USD.;Résolu;1;Explorer
+TKT000028;CUST0278;BKG000086;2025-08-14;High;Bagage perdu/endommagé;Valise arrivée avec serrure forcée et objets manquants (195 USD). Référence HF2871 — aucune réponse depuis 9 jours.;Résolu;3;Explorer
+TKT000029;CUST0180;BKG001456;2025-11-09;Medium;Upgrade / Ancillaire;J'ai payé 436 USD pour une sélection de siège non respectée lors de l'embarquement sur HF995. Remboursement demandé.;En cours;7;Explorer
+TKT000030;CUST0294;BKG000548;2025-09-21;Medium;Information vol;I need to know the baggage policy for route ABJ-DKR with my current booking. Website information is contradictory.;Escaladé;N/A;Silver
+TKT000031;CUST0073;BKG001183;2025-11-20;High;Information vol;I need to know the baggage policy for route ABJ-CDG with my current booking. Website information is contradictory.;Escaladé;N/A;Explorer
+TKT000032;CUST0184;BKG000130;2025-10-01;High;Remboursement;Refund for cancelled flight HF627 not received after 9 days. Amount: 579 USD. Three follow-up emails ignored.;Résolu;2;Explorer
+TKT000033;CUST0051;BKG001283;2025-08-24;Medium;Service bord;Équipage vol HF948 peu professionnel. Repas spécial non servi malgré réservation confirmée. Aucune excuse présentée.;Résolu;2;Explorer
+TKT000034;CUST0191;BKG001361;2025-11-29;Low;Bagage perdu/endommagé;Mon bagage n'a pas été livré à l'arrivée à BYK le 2025-12-19. PNR : HF2529. Cela fait 6 jours, toujours aucune nouvelle. J'avais un rendez-vous d'affaires important.;Résolu;2;Gold
+TKT000035;CUST0228;BKG000020;2025-01-05;Low;Retard / Annulation;Flight HF771 delayed 2h with zero communication. As Gold member I expect a minimum of transparency and assistance.;En cours;9;Silver
+TKT000036;CUST0071;BKG000784;2025-03-10;Medium;Information vol;I need to know the baggage policy for route ABJ-ACC with my current booking. Website information is contradictory.;Escaladé;N/A;Explorer
+TKT000037;CUST0052;BKG000287;2025-03-05;Urgent;Information vol;Impossible d'obtenir une information sur le statut du vol HF765. Site web non mis à jour, hotline saturée depuis 5h.;En cours;12;Explorer
+TKT000038;CUST0261;BKG000387;2025-07-20;High;Upgrade / Ancillaire;My pre-paid extra baggage allowance was not recognized at check-in for flight HF383. I paid 371 USD twice.;Résolu;1;Explorer
+TKT000039;CUST0068;BKG000793;2025-10-19;High;Remboursement;J'ai annulé mon vol flex — remboursement 591 USD toujours pas crédité. Référence : HF9655.;Escaladé;N/A;Silver
+TKT000040;CUST0147;BKG001288;2025-12-31;Medium;Service bord;Siège attribué différent de celui sélectionné et payé (348 USD) sur vol HF117. Remboursement de la sélection demandé.;Escaladé;N/A;Silver
+TKT000041;CUST0168;BKG000801;2025-10-28;High;Upgrade / Ancillaire;My pre-paid extra baggage allowance was not recognized at check-in for flight HF730. I paid 397 USD twice.;Résolu;3;Explorer
+TKT000042;CUST0090;BKG000245;2025-01-07;High;Information vol;I need to know the baggage policy for route ABJ-LOS with my current booking. Website information is contradictory.;En cours;14;Silver
+TKT000043;CUST0140;BKG001073;2025-02-02;Low;Information vol;I need to know the baggage policy for route ABJ-CMN with my current booking. Website information is contradictory.;Résolu;3;Explorer
+TKT000044;CUST0060;BKG000468;2025-09-18;High;Remboursement;Refund for cancelled flight HF468 not received after 4 days. Amount: 456 USD. Three follow-up emails ignored.;Résolu;3;Silver
+TKT000045;CUST0164;BKG000556;2025-02-09;Low;Bagage perdu/endommagé;My stroller checked in at ABJ arrived at BRU completely destroyed. Cost 509 USD — essential for my infant. No immediate solution offered.;Résolu;2;Gold
+TKT000046;CUST0284;BKG000936;2025-01-05;Medium;Upgrade / Ancillaire;J'ai payé 150 USD pour une sélection de siège non respectée lors de l'embarquement sur HF328. Remboursement demandé.;Fermé sans suite;N/A;Explorer
+TKT000047;CUST0278;BKG000710;2025-11-22;Medium;Remboursement;Remboursement demandé le 2025-10-30 pour booking HF1104. 5 jours sans réponse. C'est inacceptable.;Résolu;2;Silver
+TKT000048;CUST0144;BKG000191;2025-01-23;High;Fidélité / Points;Points redemption for upgrade on flight HF844 was declined despite sufficient balance. Account: CUST0073.;Résolu;3;Explorer
+TKT000049;CUST0223;BKG001357;2025-03-08;High;Retard / Annulation;Vol HF865 annulé sans solution alternative satisfaisante. 597 USD remboursés sur 436 USD payés. Remboursement complet exigé.;En cours;10;Explorer
+TKT000050;CUST0056;BKG000319;2025-02-24;Medium;Retard / Annulation;Flight HF817 delayed 4h with zero communication. As Gold member I expect a minimum of transparency and assistance.;Fermé sans suite;N/A;Gold
+TKT000051;CUST0168;BKG000304;2025-02-16;Medium;Retard / Annulation;Vol HF562 annulé sans solution alternative satisfaisante. 202 USD remboursés sur 392 USD payés. Remboursement complet exigé.;Résolu;1;Explorer
+TKT000052;CUST0072;BKG000249;2025-01-07;Medium;Information vol;Impossible d'obtenir une information sur le statut du vol HF939. Site web non mis à jour, hotline saturée depuis 2h.;En cours;7;Explorer
+TKT000053;CUST0048;BKG000680;2025-03-04;High;Bagage perdu/endommagé;Mon bagage n'a pas été livré à l'arrivée à CDG le 2025-11-19. PNR : HF2056. Cela fait 6 jours, toujours aucune nouvelle. J'avais un rendez-vous d'affaires important.;Résolu;2;Gold
+TKT000054;CUST0141;BKG000574;2025-08-17;Urgent;Bagage perdu/endommagé;Mon bagage n'a pas été livré à l'arrivée à CDG le 2025-07-22. PNR : HF3831. Cela fait 2 jours, toujours aucune nouvelle. J'avais un rendez-vous d'affaires important.;Fermé sans suite;N/A;Explorer
+TKT000055;CUST0270;BKG000511;2025-11-19;Low;Retard / Annulation;Vol HF521 annulé sans solution alternative satisfaisante. 169 USD remboursés sur 586 USD payés. Remboursement complet exigé.;Résolu;2;Silver
+TKT000056;CUST0113;BKG000061;2025-05-24;Medium;Fidélité / Points;Mon tier Gold n'a pas été renouvelé malgré les 1236 miles accumulés cette année. Compte : CUST0014.;Résolu;2;Explorer
+TKT000057;CUST0122;BKG001214;2025-06-12;High;Bagage perdu/endommagé;Mon bagage n'a pas été livré à l'arrivée à DKR le 2025-05-07. PNR : HF7363. Cela fait 6 jours, toujours aucune nouvelle. J'avais un rendez-vous d'affaires important.;Résolu;1;Explorer
+TKT000058;CUST0047;BKG000116;2025-04-30;High;Fidélité / Points;Mes 1219 points suite au vol HF677 du 2025-03-14 ne sont toujours pas crédités sur mon compte fidélité après 5 jours.;En cours;12;Explorer
+TKT000059;CUST0038;BKG000766;2025-12-27;Medium;Upgrade / Ancillaire;Upgrade business acheté en ligne non appliqué sur vol HF448. J'ai voyagé en économie malgré le paiement de 102 USD.;Résolu;1;Explorer
+TKT000060;CUST0158;BKG001411;2025-05-31;Medium;Information vol;I need to know the baggage policy for route ABJ-ACC with my current booking. Website information is contradictory.;Résolu;1;Explorer
+TKT000061;CUST0040;BKG000488;2025-06-27;Low;Retard / Annulation;Retard de 6h sur HF133. J'ai raté ma correspondance et dû payer un hôtel 306 USD. Je demande le remboursement.;En cours;12;Explorer
+TKT000062;CUST0198;BKG000898;2025-08-03;Low;Remboursement;Remboursement demandé le 2025-05-16 pour booking HF5205. 5 jours sans réponse. C'est inacceptable.;Résolu;2;Gold
+TKT000063;CUST0164;BKG000535;2025-02-23;High;Retard / Annulation;Vol HF203 annulé sans solution alternative satisfaisante. 246 USD remboursés sur 762 USD payés. Remboursement complet exigé.;Résolu;2;Explorer
+TKT000064;CUST0028;BKG000208;2025-06-19;Medium;Bagage perdu/endommagé;Mon bagage n'a pas été livré à l'arrivée à SPY le 2025-06-23. PNR : HF3703. Cela fait 9 jours, toujours aucune nouvelle. J'avais un rendez-vous d'affaires important.;Résolu;3;Gold
+TKT000065;CUST0079;BKG000112;2025-07-04;Urgent;Retard / Annulation;Retard de 4h sur HF776. J'ai raté ma correspondance et dû payer un hôtel 178 USD. Je demande le remboursement.;En cours;7;Explorer
+TKT000066;CUST0242;BKG001002;2025-12-05;Medium;Bagage perdu/endommagé;Valise arrivée avec serrure forcée et objets manquants (378 USD). Référence HF8758 — aucune réponse depuis 4 jours.;En cours;6;Explorer
+TKT000067;CUST0032;BKG000310;2025-12-23;Low;Remboursement;Refund for cancelled flight HF291 not received after 6 days. Amount: 530 USD. Three follow-up emails ignored.;Résolu;2;Explorer
+TKT000068;CUST0244;BKG001173;2025-05-01;Low;Information vol;Quels documents sont requis pour voyager sur la route ABJ-CDG ? Les informations sur le site sont contradictoires.;Escaladé;N/A;Silver
+TKT000069;CUST0065;BKG000088;2025-08-05;Medium;Service bord;Équipage vol HF614 peu professionnel. Repas spécial non servi malgré réservation confirmée. Aucune excuse présentée.;Escaladé;N/A;Explorer
+TKT000070;CUST0167;BKG000566;2025-09-24;Urgent;Bagage perdu/endommagé;My stroller checked in at ABJ arrived at ACC completely destroyed. Cost 148 USD — essential for my infant. No immediate solution offered.;Fermé sans suite;N/A;Explorer
+TKT000071;CUST0211;BKG000541;2025-07-16;Urgent;Service bord;Cabin crew on HF215 was rude when I asked for a blanket. As Silver member this is below expected standards.;En cours;9;Explorer
+TKT000072;CUST0244;BKG000551;2025-07-10;Medium;Information vol;Quels documents sont requis pour voyager sur la route ABJ-LOS ? Les informations sur le site sont contradictoires.;Résolu;2;Silver
+TKT000073;CUST0046;BKG000385;2025-08-15;Medium;Bagage perdu/endommagé;My stroller checked in at ABJ arrived at BRU completely destroyed. Cost 387 USD — essential for my infant. No immediate solution offered.;Résolu;3;Silver
+TKT000074;CUST0292;BKG000060;2025-03-30;Urgent;Retard / Annulation;Flight HF940 delayed 6h with zero communication. As Gold member I expect a minimum of transparency and assistance.;Résolu;2;Explorer
+TKT000075;CUST0016;BKG000496;2025-07-10;High;Retard / Annulation;Flight HF151 delayed 3h with zero communication. As Gold member I expect a minimum of transparency and assistance.;Résolu;2;Explorer
+TKT000076;CUST0293;BKG000439;2025-04-24;Medium;Service bord;Équipage vol HF458 peu professionnel. Repas spécial non servi malgré réservation confirmée. Aucune excuse présentée.;Escaladé;N/A;Explorer
+TKT000077;CUST0157;BKG001460;2025-12-30;Medium;Information vol;Quels documents sont requis pour voyager sur la route ABJ-JNB ? Les informations sur le site sont contradictoires.;En cours;3;Explorer
+TKT000078;CUST0192;BKG001150;2025-11-28;Medium;Information vol;Quels documents sont requis pour voyager sur la route ABJ-BRU ? Les informations sur le site sont contradictoires.;Escaladé;N/A;Gold
+TKT000079;CUST0030;BKG001229;2025-07-26;High;Upgrade / Ancillaire;J'ai payé 347 USD pour une sélection de siège non respectée lors de l'embarquement sur HF383. Remboursement demandé.;Résolu;2;Explorer
+TKT000080;CUST0274;BKG001308;2025-09-01;Medium;Information vol;Quels documents sont requis pour voyager sur la route ABJ-BRU ? Les informations sur le site sont contradictoires.;Résolu;2;Explorer
+TKT000081;CUST0182;BKG000458;2025-06-07;Medium;Information vol;Impossible d'obtenir une information sur le statut du vol HF400. Site web non mis à jour, hotline saturée depuis 5h.;Résolu;1;Explorer
+TKT000082;CUST0196;BKG001086;2025-06-02;High;Service bord;Siège attribué différent de celui sélectionné et payé (152 USD) sur vol HF971. Remboursement de la sélection demandé.;Résolu;2;Explorer
+TKT000083;CUST0091;BKG000642;2025-11-21;Low;Service bord;Siège attribué différent de celui sélectionné et payé (403 USD) sur vol HF519. Remboursement de la sélection demandé.;Résolu;2;Gold
+TKT000084;CUST0197;BKG000010;2025-01-20;Low;Bagage perdu/endommagé;Valise arrivée avec serrure forcée et objets manquants (212 USD). Référence HF8035 — aucune réponse depuis 3 jours.;Escaladé;N/A;Explorer
+TKT000085;CUST0258;BKG001206;2025-06-06;Low;Upgrade / Ancillaire;Upgrade business acheté en ligne non appliqué sur vol HF295. J'ai voyagé en économie malgré le paiement de 311 USD.;Résolu;3;Explorer
+TKT000086;CUST0097;BKG000338;2025-07-26;Low;Retard / Annulation;Retard de 6h sur HF845. J'ai raté ma correspondance et dû payer un hôtel 425 USD. Je demande le remboursement.;Fermé sans suite;N/A;Explorer
+TKT000087;CUST0025;BKG001356;2025-02-25;Medium;Bagage perdu/endommagé;My stroller checked in at ABJ arrived at BYK completely destroyed. Cost 118 USD — essential for my infant. No immediate solution offered.;Résolu;3;Silver
+TKT000088;CUST0052;BKG001357;2025-09-24;High;Information vol;Quels documents sont requis pour voyager sur la route ABJ-BRU ? Les informations sur le site sont contradictoires.;Résolu;2;Explorer
+TKT000089;CUST0268;BKG000414;2025-07-03;High;Remboursement;J'ai annulé mon vol flex — remboursement 196 USD toujours pas crédité. Référence : HF9154.;Résolu;3;Silver
+TKT000090;CUST0047;BKG001048;2025-02-08;Medium;Information vol;Impossible d'obtenir une information sur le statut du vol HF592. Site web non mis à jour, hotline saturée depuis 3h.;En cours;14;Explorer
+TKT000091;CUST0060;BKG000195;2025-01-24;High;Information vol;I need to know the baggage policy for route ABJ-BRU with my current booking. Website information is contradictory.;En cours;7;Gold
+TKT000092;CUST0140;BKG000790;2025-12-20;High;Bagage perdu/endommagé;Valise arrivée avec serrure forcée et objets manquants (430 USD). Référence HF2865 — aucune réponse depuis 7 jours.;Résolu;2;Silver
+TKT000093;CUST0195;BKG000735;2025-11-10;Medium;Fidélité / Points;Mes 2830 points suite au vol HF215 du 2025-03-09 ne sont toujours pas crédités sur mon compte fidélité après 4 jours.;Escaladé;N/A;Explorer
+TKT000094;CUST0269;BKG001181;2025-10-17;High;Bagage perdu/endommagé;My stroller checked in at ABJ arrived at ACC completely destroyed. Cost 127 USD — essential for my infant. No immediate solution offered.;En cours;10;Gold
+TKT000095;CUST0028;BKG000024;2025-11-26;Urgent;Retard / Annulation;Flight HF817 delayed 2h with zero communication. As Gold member I expect a minimum of transparency and assistance.;Résolu;3;Silver
+TKT000096;CUST0194;BKG000826;2025-05-01;Medium;Retard / Annulation;Flight HF869 delayed 4h with zero communication. As Gold member I expect a minimum of transparency and assistance.;Résolu;1;Explorer
+TKT000097;CUST0001;BKG000187;2025-11-06;Medium;Bagage perdu/endommagé;My stroller checked in at ABJ arrived at BRU completely destroyed. Cost 185 USD — essential for my infant. No immediate solution offered.;Résolu;2;Silver
+TKT000098;CUST0050;BKG001350;2025-04-24;High;Upgrade / Ancillaire;J'ai payé 419 USD pour une sélection de siège non respectée lors de l'embarquement sur HF472. Remboursement demandé.;En cours;8;Gold
+TKT000099;CUST0131;BKG001252;2025-04-11;Medium;Bagage perdu/endommagé;Mon bagage n'a pas été livré à l'arrivée à LOS le 2025-09-25. PNR : HF9067. Cela fait 3 jours, toujours aucune nouvelle. J'avais un rendez-vous d'affaires important.;Fermé sans suite;N/A;Silver
+TKT000100;CUST0256;BKG000009;2025-09-29;Low;Retard / Annulation;Vol HF446 annulé sans solution alternative satisfaisante. 206 USD remboursés sur 761 USD payés. Remboursement complet exigé.;Résolu;3;Gold
+TKT000101;CUST0197;BKG000858;2025-11-08;Low;Information vol;Quels documents sont requis pour voyager sur la route ABJ-BRU ? Les informations sur le site sont contradictoires.;Escaladé;N/A;Gold
+TKT000102;CUST0108;BKG001279;2025-05-29;High;Information vol;Impossible d'obtenir une information sur le statut du vol HF563. Site web non mis à jour, hotline saturée depuis 3h.;Fermé sans suite;N/A;Explorer
+TKT000103;CUST0214;BKG001381;2025-10-01;Medium;Information vol;Quels documents sont requis pour voyager sur la route ABJ-ACC ? Les informations sur le site sont contradictoires.;Fermé sans suite;N/A;Silver
+TKT000104;CUST0032;BKG001415;2025-06-01;High;Remboursement;Remboursement demandé le 2025-03-16 pour booking HF3636. 2 jours sans réponse. C'est inacceptable.;Résolu;1;Explorer
+TKT000105;CUST0199;BKG000854;2025-12-17;High;Retard / Annulation;Retard de 6h sur HF730. J'ai raté ma correspondance et dû payer un hôtel 478 USD. Je demande le remboursement.;Escaladé;N/A;Explorer
+TKT000106;CUST0039;BKG000383;2025-03-30;Urgent;Remboursement;Refund for cancelled flight HF989 not received after 7 days. Amount: 281 USD. Three follow-up emails ignored.;En cours;12;Explorer
+TKT000107;CUST0166;BKG001223;2025-01-27;Medium;Information vol;Impossible d'obtenir une information sur le statut du vol HF233. Site web non mis à jour, hotline saturée depuis 6h.;Résolu;2;Explorer
+TKT000108;CUST0213;BKG001113;2025-10-02;Urgent;Fidélité / Points;Mes 779 points suite au vol HF663 du 2025-07-03 ne sont toujours pas crédités sur mon compte fidélité après 7 jours.;En cours;12;Silver
+TKT000109;CUST0124;BKG001316;2025-11-11;Low;Service bord;Cabin crew on HF469 was rude when I asked for a blanket. As Silver member this is below expected standards.;Résolu;2;Explorer
+TKT000110;CUST0229;BKG000997;2025-01-23;Medium;Upgrade / Ancillaire;My pre-paid extra baggage allowance was not recognized at check-in for flight HF915. I paid 369 USD twice.;Escaladé;N/A;Explorer
+TKT000111;CUST0276;BKG001440;2025-08-11;High;Remboursement;Remboursement demandé le 2025-10-03 pour booking HF4492. 2 jours sans réponse. C'est inacceptable.;En cours;5;Explorer
+TKT000112;CUST0295;BKG000467;2025-05-13;High;Information vol;Impossible d'obtenir une information sur le statut du vol HF834. Site web non mis à jour, hotline saturée depuis 2h.;En cours;10;Explorer
+TKT000113;CUST0055;BKG000594;2025-12-18;Medium;Service bord;Siège attribué différent de celui sélectionné et payé (144 USD) sur vol HF789. Remboursement de la sélection demandé.;Résolu;2;Silver
+TKT000114;CUST0152;BKG001299;2025-03-15;High;Remboursement;Refund for cancelled flight HF504 not received after 9 days. Amount: 240 USD. Three follow-up emails ignored.;Fermé sans suite;N/A;Explorer
+TKT000115;CUST0281;BKG000175;2025-06-06;High;Remboursement;Refund for cancelled flight HF111 not received after 4 days. Amount: 206 USD. Three follow-up emails ignored.;Escaladé;N/A;Gold
+TKT000116;CUST0291;BKG000112;2025-10-09;High;Retard / Annulation;Vol HF971 annulé sans solution alternative satisfaisante. 268 USD remboursés sur 526 USD payés. Remboursement complet exigé.;Résolu;3;Gold
+TKT000117;CUST0036;BKG000397;2025-06-12;High;Service bord;Siège attribué différent de celui sélectionné et payé (445 USD) sur vol HF302. Remboursement de la sélection demandé.;En cours;4;Explorer
+TKT000118;CUST0224;BKG000567;2025-07-04;Medium;Service bord;Siège attribué différent de celui sélectionné et payé (252 USD) sur vol HF680. Remboursement de la sélection demandé.;Résolu;3;Silver
+TKT000119;CUST0101;BKG000540;2025-11-17;High;Retard / Annulation;Flight HF893 delayed 5h with zero communication. As Gold member I expect a minimum of transparency and assistance.;Résolu;2;Explorer
+TKT000120;CUST0077;BKG000750;2025-07-20;High;Bagage perdu/endommagé;Valise arrivée avec serrure forcée et objets manquants (297 USD). Référence HF5269 — aucune réponse depuis 8 jours.;Escaladé;N/A;Gold
