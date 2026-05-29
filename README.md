@@ -192,8 +192,19 @@ Charger les seeds :
 ```powershell
 dbt seed
 ```
-
 Construire les modeles :
+
+dbt run --select staging          
+dbt snapshot                      
+dbt run --select vault            
+dbt run --select vault.business_vault  
+dbt run --select marts            
+dbt run --select semantic  
+dbt run --select ontology  
+dbt run --select ai_ready         
+dbt test                          
+
+ou :
 
 ```powershell
 dbt run

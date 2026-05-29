@@ -16,5 +16,4 @@ __pycache__/
 *.duckdb.wal
 powerbi_export/
 
-# Large local recordings
-Enregistrement/
+
