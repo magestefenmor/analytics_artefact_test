@@ -1,6 +1,7 @@
-cohere
-duckdb
-dbt-cohere
-python-dotenv
-mcp
-pandas
+cohere==7.0.0
+dbt-duckdb==1.10.1
+duckdb==1.5.3
+mashumaro[msgpack]>=3.9,<3.15
+mcp==1.27.1
+pandas==3.0.3
+python-dotenv==1.2.2
