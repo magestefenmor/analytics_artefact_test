@@ -1,0 +1,6 @@
+cohere
+duckdb
+dbt-cohere
+python-dotenv
+mcp
+pandas

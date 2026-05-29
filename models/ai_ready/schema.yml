@@ -1,0 +1,55 @@
+version: 2
+
+models:
+
+  - name: obt_flight_full
+    description: >
+      One Big Table — 1 ligne par vol, tout dénormalisé.
+      Combine opérations + route + aéroports + flotte + calendrier
+      + revenus + coûts + sentiment + labels ML.
+      Usage : ML (prédiction retard/yield), LLM context, Claude API.
+    columns:
+      - name: flight_id
+        tests: [unique, not_null]
+      - name: load_factor_label
+        tests:
+          - accepted_values:
+              values: ['Optimal', 'Acceptable', 'Sous-rempli', 'Critique']
+      - name: margin_label
+        tests:
+          - accepted_values:
+              values: ['Très rentable', 'Rentable',
+                       'Légèrement déficitaire', 'Fortement déficitaire']
+
+  - name: obt_customer_360
+    description: >
+      One Big Table — 1 ligne par client, tout agrégé.
+      Combine profil + comportement réservation + LTV
+      + loyalty + sentiment + labels ML (recency, frequency, value).
+      Usage : segmentation ML, scoring rétention, LLM profiling.
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
+      - name: recency_label
+        tests:
+          - accepted_values:
+              values: ['Actif', 'En risque', 'Dormant', 'Jamais réservé']
+      - name: value_label
+        tests:
+          - accepted_values:
+              values: ['High-value', 'Mid-value', 'Low-value', 'No revenue']
+
+  - name: obt_route_summary
+    description: >
+      One Big Table — 1 ligne par route, tout agrégé.
+      Combine identité route + KPIs opérationnels + financiers
+      + part réseau + sentiment + labels ontologie.
+      Usage : optimisation réseau, ML pricing, LLM network analysis.
+    columns:
+      - name: route_id
+        tests: [unique, not_null]
+      - name: route_label_ontology
+        tests:
+          - accepted_values:
+              values: ['Cash Cow', 'Strategic Underperformer',
+                       'Loss Maker', 'Emerging', 'Standard']

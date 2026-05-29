@@ -1,0 +1,87 @@
+version: 2
+
+models:
+
+  # ── DIMENSIONS ──────────────────────────────────────────────
+  - name: dim_dates
+    description: "Calendrier complet 2024-2025. Grain : 1 jour."
+    columns:
+      - name: date_id
+        tests: [unique, not_null]
+
+  - name: dim_airports
+    description: "Référentiel aéroports avec région géographique."
+    columns:
+      - name: airport_code
+        tests: [unique, not_null]
+
+  - name: dim_routes
+    description: "Routes enrichies avec villes O&D et flag retour symétrique."
+    columns:
+      - name: route_id
+        tests: [unique, not_null]
+      - name: route_type
+        tests:
+          - accepted_values:
+              values: ['Domestic', 'Regional', 'International']
+
+  - name: dim_customers
+    description: "Profils clients avec ancienneté et flag has_booking."
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
+      - name: loyalty_tier
+        tests:
+          - accepted_values:
+              values: ['None', 'Explorer', 'Silver', 'Gold']
+
+  - name: dim_aircraft
+    description: "Types d'appareils avec famille, capacité typique et flag neo."
+    columns:
+      - name: aircraft_type
+        tests: [unique, not_null]
+
+  # ── FACTS ───────────────────────────────────────────────────
+  - name: fact_flights
+    description: >
+      Fait central — 1 ligne par vol.
+      Contient load_factor, yield, marge, flags opérationnels.
+    columns:
+      - name: flight_id
+        tests: [unique, not_null]
+      - name: load_factor
+        tests:
+          - not_null:
+              where: "flight_status != 'CANCELLED'"
+      - name: flight_status
+        tests:
+          - accepted_values:
+              values: ['ON TIME', 'DELAYED', 'CANCELLED']
+
+  - name: fact_bookings
+    description: >
+      1 ligne par réservation.
+      Contient revenus billetterie + ancillaires, lead time, flags statut.
+    columns:
+      - name: booking_id
+        tests: [unique, not_null]
+      - name: ticket_price_usd
+        tests: [not_null]
+
+  - name: fact_flight_costs
+    description: >
+      1 ligne par vol (1-1 avec fact_flights).
+      Décomposition fuel/crew/handling/maintenance + % par poste.
+    columns:
+      - name: flight_id
+        tests: [unique, not_null]
+      - name: total_cost_usd
+        tests: [not_null]
+
+  - name: fact_loyalty_activity
+    description: >
+      1 ligne par événement loyalty.
+      Flags earn/redeem/upgrade/downgrade/expiry.
+    columns:
+      - name: activity_id
+        tests: [unique, not_null]

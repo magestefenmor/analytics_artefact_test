@@ -1,0 +1,360 @@
+:root {
+  --forest: #197D39;
+  --chocolate: #EB7B33;
+  --lime: #9BCB3B;
+  --dark: #044F2B;
+  --sea: #2EA443;
+  --page: #4f5a61;
+  --paper: #f8f9fa;
+  --ink: #111513;
+  --muted: #aeb4b1;
+  --line: #d9dddb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--page);
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+i svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+}
+
+.copilot-page {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: start center;
+  padding: 56px 24px;
+  background:
+    
+    url("airci-aviation-bg.png") center / cover no-repeat,
+    #4f5a61;
+}
+
+.ambient {
+  display: none;
+}
+
+.ambient-left {
+  width: 600px;
+  height: 900px;
+  left: -285px;
+  top: -235px;
+  border-radius: 46%;
+  background: linear-gradient(90deg, rgba(27, 35, 39, .48), rgba(255, 255, 255, .07));
+  box-shadow: inset -68px 0 110px rgba(0, 0, 0, .42);
+}
+
+.ambient-right {
+  width: 660px;
+  height: 920px;
+  right: -325px;
+  top: -240px;
+  border-radius: 46%;
+  background: linear-gradient(270deg, rgba(27, 35, 39, .46), rgba(255, 255, 255, .07));
+  box-shadow: inset 68px 0 110px rgba(0, 0, 0, .42);
+}
+
+.ambient-bottom {
+  width: 570px;
+  height: 780px;
+  left: 50%;
+  top: -300px;
+  transform: translateX(-50%);
+  border-radius: 46%;
+  background: linear-gradient(90deg, rgba(24, 32, 35, .34), rgba(255, 255, 255, .055));
+  box-shadow:
+    inset -52px 0 94px rgba(0, 0, 0, .34),
+    inset 52px 0 94px rgba(0, 0, 0, .24);
+}
+
+.hero-shell {
+  position: relative;
+  z-index: 1;
+  width: min(860px, 100%);
+  display: grid;
+  justify-items: center;
+  gap: 62px;
+}
+
+.hero-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.hero-title img {
+  display: block;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: white;
+  object-fit: contain;
+}
+
+.hero-title h1 {
+  margin: 0;
+  color: rgba(255, 255, 255, .94);
+  font-size: clamp(38px, 5vw, 52px);
+  font-weight: 650;
+  letter-spacing: 0;
+}
+
+.copilot-card {
+  width: min(760px, calc(100vw - 48px));
+  min-height: 300px;
+  border-radius: 18px;
+  background: rgba(248, 249, 250, .98);
+  border: 1px solid rgba(255, 255, 255, .74);
+  box-shadow: 0 34px 92px rgba(0, 0, 0, .30);
+  padding: 72px 64px 38px;
+  display: grid;
+  justify-items: center;
+  align-content: start;
+}
+
+.copilot-card h2 {
+  margin: 0 0 28px;
+  color: #101312;
+  font-size: 23px;
+  font-weight: 760;
+  letter-spacing: 0;
+}
+
+.composer {
+  width: min(520px, 100%);
+  min-height: 46px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 32px;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+  padding: 0 7px 0 14px;
+  transition: border-color .18s ease, box-shadow .18s ease, background .18s ease;
+}
+
+.composer:hover,
+.composer:focus-within {
+  border-color: var(--chocolate);
+  box-shadow: 0 0 0 4px rgba(235, 123, 51, .14);
+  background: #fff;
+}
+
+.composer input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  color: var(--ink);
+  background: transparent;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.composer input::placeholder {
+  color: #7c8580;
+}
+
+.send-button {
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  color: #111;
+  background: transparent;
+}
+
+.send-button:hover {
+  background: #f0f3f1;
+}
+
+.send-button:disabled {
+  opacity: .55;
+  cursor: wait;
+}
+
+.composer.is-busy .send-button svg {
+  animation: spin 1s linear infinite;
+}
+
+.answer-panel {
+  width: min(710px, 100%);
+  margin-top: 26px;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 30px rgba(4, 79, 43, .08);
+  padding: 18px 20px;
+}
+
+.answer-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  color: var(--forest);
+  font-weight: 760;
+  font-size: 13px;
+}
+
+.answer-text {
+  margin: 0;
+  color: #223028;
+  line-height: 1.56;
+  white-space: pre-wrap;
+}
+
+.markdown-answer {
+  color: #223028;
+  font-size: 15px;
+  line-height: 1.62;
+}
+
+.markdown-answer > :first-child {
+  margin-top: 0;
+}
+
+.markdown-answer > :last-child {
+  margin-bottom: 0;
+}
+
+.markdown-answer h3 {
+  margin: 20px 0 8px;
+  color: var(--dark);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.markdown-answer p {
+  margin: 10px 0;
+}
+
+.markdown-answer strong {
+  color: #0d2117;
+  font-weight: 800;
+}
+
+.markdown-answer ol,
+.markdown-answer ul {
+  margin: 10px 0 14px;
+  padding-left: 22px;
+}
+
+.markdown-answer li {
+  margin: 7px 0;
+  padding-left: 2px;
+}
+
+.markdown-answer li::marker {
+  color: var(--forest);
+  font-weight: 800;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 900px) {
+  .copilot-page {
+    padding: 42px 20px;
+  }
+
+  .hero-shell {
+    gap: 38px;
+  }
+
+  .copilot-card {
+    width: min(680px, calc(100vw - 40px));
+    min-height: 280px;
+    padding: 58px 34px 32px;
+  }
+
+  .ambient-left {
+    left: -365px;
+  }
+
+  .ambient-right {
+    right: -400px;
+  }
+}
+
+@media (max-width: 560px) {
+  .copilot-page {
+    padding: 28px 14px;
+  }
+
+  .hero-shell {
+    gap: 28px;
+  }
+
+  .hero-title h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .hero-title img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .copilot-card {
+    width: calc(100vw - 28px);
+    min-height: 280px;
+    border-radius: 16px;
+    padding: 44px 18px 24px;
+  }
+
+  .copilot-card h2 {
+    max-width: 270px;
+    margin: 0 0 28px;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .composer {
+    min-height: 46px;
+    grid-template-columns: minmax(0, 1fr) 32px;
+    padding: 0 8px 0 14px;
+    border-radius: 12px;
+  }
+
+  .composer input {
+    font-size: 15px;
+  }
+}

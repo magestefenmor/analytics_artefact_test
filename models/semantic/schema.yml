@@ -1,0 +1,51 @@
+version: 2
+
+models:
+
+  - name: sem_kpis_operations
+    description: >
+      Vue sémantique — KPIs opérationnels par vol.
+      KPIs : load_factor, is_on_time, delay_bucket, is_cancelled.
+      Grain : 1 ligne par vol.
+    columns:
+      - name: flight_id
+        tests: [not_null]
+      - name: load_factor_label
+        tests:
+          - accepted_values:
+              values: ['Optimal', 'Acceptable', 'Sous-rempli', 'Critique']
+
+  - name: sem_kpis_revenue
+    description: >
+      Vue sémantique — KPIs revenus et rentabilité par vol.
+      KPIs : yield, RASK, CASK, flight_margin, ancillary_attach_rate,
+             ancillary_revenue_share.
+      Grain : 1 ligne par vol.
+    columns:
+      - name: flight_id
+        tests: [not_null]
+      - name: margin_label
+        tests:
+          - accepted_values:
+              values: ['Très rentable', 'Rentable',
+                       'Légèrement déficitaire', 'Fortement déficitaire']
+
+  - name: sem_kpis_customer
+    description: >
+      Vue sémantique — KPIs client et fidélité.
+      KPIs : LTV, repeat_rate, no_show_rate, ancillary_attach_rate,
+             loyalty_redemption_rate, tier_churn, days_since_last_booking.
+      Grain : 1 ligne par client.
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
+
+  - name: sem_kpis_route
+    description: >
+      Vue sémantique — KPIs agrégés par route.
+      KPIs : avg_load_factor, on_time_rate, total_margin, RASK, CASK,
+             avg_yield, revenue_share_network.
+      Grain : 1 ligne par route.
+    columns:
+      - name: route_id
+        tests: [unique, not_null]

@@ -1,0 +1,76 @@
+version: 2
+
+models:
+
+  - name: ont_route_labels
+    description: >
+      Classification ontologique des routes.
+      Source : sem_kpis_route.
+      Labels : Cash Cow | Strategic Underperformer | Loss Maker |
+               Emerging | High Concentration Risk.
+      Colonnes clés : route_label_ont, profitability_signal,
+      otp_signal, capacity_signal, recommended_action.
+    columns:
+      - name: route_id
+        tests: [unique, not_null]
+      - name: route_label_ont
+        tests:
+          - accepted_values:
+              values:
+                - 'Cash Cow'
+                - 'Strategic Underperformer'
+                - 'Loss Maker'
+                - 'Emerging'
+                - 'High Concentration Risk'
+
+  - name: ont_customer_labels
+    description: >
+      Classification ontologique des clients.
+      Source : sem_kpis_customer.
+      Labels : High-Value Active | High-Value At-Risk |
+               Corporate High-Value | Loyal Budget |
+               One-Timer | Dormant | Standard.
+      Colonnes clés : customer_label_ont, churn_risk_score (0-100),
+      value_signal, loyalty_signal, recommended_action.
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
+      - name: customer_label_ont
+        tests:
+          - accepted_values:
+              values:
+                - 'Corporate High-Value'
+                - 'High-Value Active'
+                - 'High-Value At-Risk'
+                - 'Loyal Budget'
+                - 'One-Timer'
+                - 'Dormant'
+                - 'Standard'
+      - name: churn_risk_score
+        description: "Score 0-100. > 60 = intervention urgente."
+        tests: [not_null]
+
+  - name: ont_flight_labels
+    description: >
+      Classification ontologique des vols.
+      Source : sem_kpis_operations + sem_kpis_revenue.
+      Labels : High-Yield | Chronically Delayed | Loss-Making |
+               Underutilized | Cancelled | Standard.
+      Colonnes clés : flight_label_ont, action_priority (1=urgent),
+      performance_signal, recommended_action.
+    columns:
+      - name: flight_id
+        tests: [unique, not_null]
+      - name: flight_label_ont
+        tests:
+          - accepted_values:
+              values:
+                - 'High-Yield'
+                - 'Chronically Delayed'
+                - 'Loss-Making'
+                - 'Underutilized'
+                - 'Cancelled'
+                - 'Standard'
+      - name: action_priority
+        description: "1 = urgent, 6 = standard. Trié par défaut."
+        tests: [not_null]

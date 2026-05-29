@@ -1,0 +1,121 @@
+version: 2
+
+models:
+
+  - name: stg_flights
+    description: "Verifications sur les vols."
+    columns:
+      - name: flight_id
+        description: "Clé primaire vol"
+        tests: [unique, not_null]
+      - name: flight_status
+        tests:
+          - accepted_values:
+              values: ['ON TIME', 'DELAYED', 'CANCELLED']
+      - name: route_id
+        tests:
+          - relationships:
+              to: ref('stg_routes')
+              field: route_id
+      
+      - name: delay_min
+        tests:
+          - dbt_utils.expression_is_true:
+              expression: " >= 0"
+      
+      - name: actual_arrival
+        tests:
+          - dbt_utils.expression_is_true:
+              expression: " >= actual_departure"
+
+
+  - name: stg_bookings
+    description: "Réservations nettoyées avec total_revenue_usd calculé."
+    columns:
+      - name: booking_id
+        tests: [unique, not_null]
+      - name: booking_status
+        tests:
+          - accepted_values:
+              values: ['Confirmed', 'Flown', 'No Show', 'Changed']
+      - name: ticket_price_usd
+        tests: [not_null]
+
+      - name: customer_id
+        tests:
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+
+      - name: flight_id
+        tests:
+          - relationships:
+              to: ref('stg_flights')
+              field: flight_id
+
+  - name: stg_customers
+    description: "Clients nettoyés. loyalty_tier NULL → 'None'."
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
+      - name: loyalty_tier
+        tests:
+          - accepted_values:
+              values: ['None', 'Explorer', 'Silver', 'Gold']
+
+  - name: stg_routes
+    description: "Routes nettoyées avec route_label O-D."
+    columns:
+      - name: route_id
+        tests: [unique, not_null]
+
+      - name: origin_airport_code
+        tests:
+          - relationships:
+              to: ref('stg_airports')
+              field: airport_code
+
+      - name: destination_airport_code
+        tests:
+          - relationships:
+              to: ref('stg_airports')
+              field: airport_code
+
+  - name: stg_airports
+    description: "Aéroports avec flag hub ABJ."
+    columns:
+      - name: airport_code
+        tests: [unique, not_null]
+
+  - name: stg_flight_costs
+    description: "Coûts par vol. is_generated=1 pour les 208 vols générés synthétiquement."
+    columns:
+      - name: flight_id
+        tests: [unique, not_null]
+      - name: total_cost_usd
+        tests: [not_null]
+
+  - name: stg_loyalty_activity
+    description: "Événements loyalty avec points earn/burn."
+    columns:
+      - name: activity_id
+        tests: [unique, not_null]
+
+  - name: stg_reviews
+    description: "Avis clients avec sentiment_score normalisé -1/0/1."
+    columns:
+      - name: review_id
+        tests: [unique, not_null]
+      - name: sentiment_score
+        
+  - name: stg_support_tickets
+    description: "Tickets support client."
+    columns:
+      - name: ticket_id
+        tests: [unique, not_null]
+
+  - name: stg_complaint_logs
+    description: "Logs plaintes avec département assigné."
+    columns:
+      - name: complaint_id
+        tests: [unique, not_null]

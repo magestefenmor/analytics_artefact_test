@@ -1,0 +1,91 @@
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: 'airci_project'
+version: '1.0.0'
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'airci_project'
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/
+# directory as views. These settings can be overridden in the individual model
+# files using the `{{ config(...) }}` macro.
+models:
+  airci_project:
+    # Config indicated by + and applies to all files under models/example/
+    staging:
+      +schema: staging
+      +materialized: table
+    vault:
+      hubs:
+        +schema: vault
+        +materialized: table
+      links:
+        +schema: vault
+        +materialized: table
+      satellites:
+        +schema: vault
+        +materialized: table
+      business_vault:
+        +schema: vault
+        +materialized: table
+    marts:
+      facts:
+        +schema: marts
+        +materialized: table
+      dims:
+        +schema: marts
+        +materialized: table
+    semantic:
+      +schema: semantic
+      +materialized: view
+    ontology:
+      +schema: ontology
+      +materialized: table
+    ai_ready:
+      +schema: ai_ready
+      +materialized: table
+
+
+seeds:
+      airci_project: 
+        +delimiter: ";"
+        airport:
+          +column_types:
+            latitude: varchar
+            longitude: varchar
+
+        bookings:
+          +column_types:
+            ticket_price_usd: varchar
+            ancillary_revenue_usd: varchar
+            bags_count: integer
+            seat_selection_flag: integer
+
+        flightCosts:
+          +column_types:
+            fuel_cost_usd: varchar
+            crew_cost_usd: varchar
+            maintenance_usd: varchar
+            total_cost_usd: varchar
+            cost_per_seat_usd: varchar
+   
+        
