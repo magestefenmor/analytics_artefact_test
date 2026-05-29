@@ -1,5 +1,0 @@
-aircraft_type,aircraft_family,typical_seat_capacity,is_neo_engine,range_category
-A330-900neo,Wide-body long-courrier,287,1,Long > 5000km
-A319,Narrow-body court-courrier,122,0,Court < 3000km
-A320neo,Narrow-body moyen-courrier,150,1,Moyen < 5000km
-A320,Narrow-body moyen-courrier,150,0,Moyen < 5000km

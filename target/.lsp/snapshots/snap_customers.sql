@@ -1,1 +1,0 @@
-{{ snapshot_snap_customers() }}
