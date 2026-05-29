@@ -1,0 +1,19 @@
+target/
+dbt_packages/
+logs/
+dbt_internal_packages/
+.env
+
+# Local tooling / caches
+.metadata/
+.vscode/
+__pycache__/
+*.py[cod]
+
+# Local databases and generated exports
+*.duckdb
+*.duckdb.wal
+powerbi_export/
+
+# Large local recordings
+Enregistrement/
